@@ -1,0 +1,70 @@
+.MApreferences {
+    color: #515751;
+    /*float: right;*/
+    /*width: 25%;*/
+    /*padding: 5px;*/
+}
+
+.box {
+    padding: 5px;
+}
+
+#MApersonal {
+    margin: auto;
+    width: 25%;
+    text-align: center;
+}
+
+h1.orderpage, .accountpage {
+    /*border-image: linear-gradient(#36453B, #F5F9E9);*/
+    border: #36453B solid 1.5px;
+    border-radius: 6px;
+    padding: 15px;
+    word-spacing: 10px;
+    position: center;
+    /*color: #36453B;*/
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin: 10px;
+    width: auto;
+    text-align: center;
+}
+
+.spacer {
+    margin: 1px;
+}
+
+fieldset {
+    margin: auto;
+    width: 25%;
+    text-align: center;
+}
+
+select { /*preferences on My Account Page*/
+    background-color: white;
+    color: #36453B;
+}
+p.MAhistories {
+    color: #515751;
+    position: relative;
+    padding: 5px;
+}
+
+p.display {
+    color: #515751;
+    position: relative;
+    border: gray 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+input {
+    position: center;
+}
+
+/*.box {*/
+/*    float: left;*/
+/*    width: 25%;*/
+/*    padding: 5px;*/
+/*}*/
