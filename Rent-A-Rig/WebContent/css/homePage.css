@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color:#F5F9E9; 
+	background-size: cover;
+	background-position:center;
+	background-attachment: fixed;
+	width:100%;
+	height:auto;
+}
+
+.container1{
+	background-color: pink;
+	text-align: center;
+	padding:20px;
+
+}
+.image1{
+	background-image: url("../resources/programming-code-abstract-technology-background-software-1024x756.jpg");
+	background-size: cover;
+}
+.container2{
+	
+	background-color:#596869;
+	text-align: center;
+	padding:10px;
+}  
+.container3{
+
+	text-align: center;
+}  
+.container4{
+	
+	text-align: center;
+}  
+.container5{
+
+	text-align: center
+}  
+
+.container6{
+	background-color:#596869;
+	text-align: center;
+}  
