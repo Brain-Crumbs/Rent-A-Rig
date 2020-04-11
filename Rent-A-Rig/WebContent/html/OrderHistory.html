@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Order History</title>
     <link href="mainStyle.css" rel="stylesheet" type="text/css" >
+    <link href="MyAccountHistory.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
     <section>Navigation</section>
@@ -11,15 +12,63 @@
         <h1 class="orderpage">Order History</h1>
     </header>
     <section id="History">
-        <p>Your Order History will display below:</p>
         <form>
+            <p>Your order-history will be displayed below:</p>
             <p>Filter By:
-            <input type="text" name="keyword" size="15" maxlength="30"/>
-            <input type="submit" name="submit" width="100" height="15"></p>
+            <select name = "filter by">
+                <option value="keyword">keyword</option>
+                <option value="date">date</option>
+                <option value="amount">amount</option></p>
+            </select>
         </form>
-        <p class="display">This is where the order history will be displayed</p>
+        <table class="table">
+            <tr id="Order #: ">
+                <th scope="row">Order #: </th>
+                <td></td>
+                <td></td>
+                <td>#000001</td>
+            </tr>
+            <tr id="vertical">
+                <th scope="row">Online?</th>
+                <td></td>
+                <td></td>
+                <td>Yes</td>
+            </tr>
+            <tr id="dateOrdered">
+                <th scope="row">Date Ordered:</th>
+                <td></td>
+                <td></td>
+                <td>3/29/20</td>
+            </tr>
+            <tr id="total">
+                <th scope="row">Total: </th>
+                <td></td>
+                <td></td>
+                <td>$124.99/week</td>
+            </tr>
+            <tr id="type">
+                <th scope="row">Rental Type: </th>
+                <td></td>
+                <td></td>
+                <td>Lenovo ThinkPad</td>
+            </tr>
+            <tr id="stats">
+                <th scope="row">Status:</th>
+                <td></td>
+                <td></td>
+                <td>delivered</td>
+            </tr>
+            <tr id="reviewed">
+                <th scope="row">Reviewed?</th>
+                <td></td>
+                <td></td>
+                <td>N/A</td>
+            </tr>
+        </table>
     </section>
+    <p>Click <a href="MyAccount.html"><em>here</em></a> to go back to "My Account"</p>
     <footer class="footnotes">
+        <p>Would you like to leave some feedback? If so, please click <a href="Feedback.html"><em>here!</em></a> </p>
         <p>Contact Information - Phone: (555) 555-5555, <a href="contact@Rent-A-Rig.com">contact@Rent-A-Rig.com</a> </p>
     </footer>
 </body>

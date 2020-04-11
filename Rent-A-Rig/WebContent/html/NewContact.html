@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Contact Information</title>
+    <link type="text/css" rel="stylesheet" href="MyAccountHistory.css">
+    <link href="mainStyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="MApersonal" class="newcontact">
+    <br><fieldset class="newcontact"> <!--remove the fieldset and make in to a table or use border. -->
+    <legend><strong>Please Enter New Contact Details</strong></legend>
+    <form>
+        <label>Name: <br>
+            <input type="text" name="name"/></label><br>
+        <label>Email: <br>
+            <input type="text" name="email" /></label><br>
+        <label>Mobile: <br>
+            <input type="text" name="mobile" /></label> <br>
+        <label>Address: <br>
+            <input class="spacer" type="text" name="address" /><br>
+            <input class="spacer" type="text" name="address"/><br>
+            <input class="spacer" type="text" name="City, State, Zip"/><br>
+            <p><input class="spacer" type="radio" name="Shipping" value="Shipping"/>Shipping <!-- why does this allow multiple radio buttons to be selected???? -->
+            <input class="spacer" type="radio" name="Billing" value="Billing"/>Billing
+            <input class="spacer" type="radio" name="Both" value="Both" checked="checked"/>Both</label></p>
+        <label>Credit Card: <br>
+            <input class="spacer" type="text" name="Credit Card Number"/><br>
+            <input class="spacer" type="text" name="Name on Card"/><br>
+            <input class="spacer" type="text" name="Expiration"/><br>
+            <input class="spacer" type="text" name="CVV"/><br></label>
+            <button type="submit"><a href="MyAccount.html">Submit</a> </button> <br>
+    </form>
+</fieldset>
+
+</div>
+<footer class="contactFoot">
+    <p>Would you like to leave some feedback? If so, please click <a href="Feedback.html"><em>here!</em></a> </p>
+    <p>Contact Information - Phone: (555) 555-5555, <a href="contact@Rent-A-Rig.com">contact@Rent-A-Rig.com</a> </p>
+</footer>
+</body>
+</html>

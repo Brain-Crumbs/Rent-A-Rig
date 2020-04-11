@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link href="mainStyle.css" type="text/css" rel="stylesheet">
+    <link href="MyAccountHistory.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Review Time!</legend>
+            <form>
+                <p>How did you hear about us?
+                    <select name="recommend">
+                        <option value="Google">Google</option>
+                        <option value="Yahoo">Yahoo</option>
+                        <option value="Ask Jeeves">Ask Jeeves</option>
+                        <option value="A Friend">A friend</option>
+                        <option value="Ad">An ad</option>
+                        <option value="other..">other..</option>
+                    </select>
+                </p>
+                <p>Would you visit us &/or use our services again?</p>
+                <input type="radio" name="Yes" value="Yes" checked="checked"/> Yes
+                <input type="radio" name="No" value="No"/>No<br>
+                <p>Comments:</p>
+                <textarea name="Comments" cols="20" rows="4">Enter your comments here...</textarea><br>
+
+                <p>Would you like to be signed up for Email Offers and updates?<br><br>
+                <input type="checkbox" value="Email" name="Email">Email
+                <input type="checkbox" value="Snail Mail" name="Snail Mail">Snail Mail</p>
+                <button type="submit"><a href="MyAccount.html">Submit</a></button><br>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

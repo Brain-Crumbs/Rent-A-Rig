@@ -1,3 +1,45 @@
+fieldset {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+
+select { /*preferences on My Account Page*/
+    background-color: white;
+    color: #36453B;
+}
+
+input {
+    padding: 2px;
+    border: 1px solid #515751;
+    color: #515751;
+    border-radius: 7%;
+}
+
+p.MAhistories {
+    color: #515751;
+    position: relative;
+    padding: 5px;
+}
+
+h1.orderpage, .accountpage {
+    padding: 15px;
+    word-spacing: 10px;
+    position: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin: 10px;
+    width: auto;
+    text-align: center;
+}
+
+div.footlike {
+    margin: 40%;
+    width: auto;
+    text-align: center;
+    color: #36453B;
+}
+
 .MApreferences {
     color: #515751;
     /*float: right;*/
@@ -9,24 +51,9 @@
     padding: 5px;
 }
 
-#MApersonal {
+.newcontact {
     margin: auto;
-    width: 25%;
-    text-align: center;
-}
-
-h1.orderpage, .accountpage {
-    /*border-image: linear-gradient(#36453B, #F5F9E9);*/
-    border: #36453B solid 1.5px;
-    border-radius: 6px;
-    padding: 15px;
-    word-spacing: 10px;
-    position: center;
-    /*color: #36453B;*/
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    margin: 10px;
-    width: auto;
+    width: 50%;
     text-align: center;
 }
 
@@ -34,37 +61,9 @@ h1.orderpage, .accountpage {
     margin: 1px;
 }
 
-fieldset {
-    margin: auto;
-    width: 25%;
-    text-align: center;
-}
-
-select { /*preferences on My Account Page*/
-    background-color: white;
-    color: #36453B;
-}
-p.MAhistories {
-    color: #515751;
-    position: relative;
-    padding: 5px;
-}
-
-p.display {
-    color: #515751;
-    position: relative;
-    border: gray 1px solid;
-    border-radius: 5px;
+.table {
+    text-align: left;
+    border: 1px solid #36453B;
+    column-gap: 50px;
     padding: 10px;
-
 }
-
-input {
-    position: center;
-}
-
-/*.box {*/
-/*    float: left;*/
-/*    width: 25%;*/
-/*    padding: 5px;*/
-/*}*/

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>My Account</title>
     <link href="mainStyle.css" rel="stylesheet" type="text/css" >
+    <link href="MyAccountHistory.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <section>
@@ -14,20 +15,47 @@
         <h1 class="accountpage">My Account</h1>
     </header>
     <div id="MApersonal" class="box">
-        <br><fieldset> <!--remove the fieldset and make in to a table or use border. -->
-            <legend><strong>Contact Details</strong></legend>
-            <label>Name: <br>
-            <input type="text" name="name"/></label><br>
-            <label>Email: <br>
-            <input type="text" name="email" /></label><br>
-            <label>Mobile: <br>
-            <input type="text" name="mobile" /></label> <br>
-            <label>Address: <br>
-            <input class="spacer" type="text" name="address" /><br>
-            <input class="spacer" type="text" name="address"/><br>
-            <input class="spacer" type="text" name="City, State, Zip"/></label><br><br>
-            <input type="submit" name="submit" width="100" height="15"><br>
-        </fieldset>
+        <h2>My Personal Information:</h2>
+        <table class="table">
+            <tr id="name">
+                <th scope="row">Name: </th>
+                <td></td>
+                <td></td>
+                <td>Customer 1</td>
+            </tr>
+            <tr id="add1">
+                <th scope="row">Address Line 1:</th>
+                <td></td>
+                <td></td>
+                <td>Address line 1</td>
+            </tr>
+            <tr id="add2">
+                <th scope="row">Address Line 2: </th>
+                <td></td>
+                <td></td>
+                <td>Address line 2</td>
+            </tr>
+            <tr id="zip">
+                <th scope="row">City, State, Zip: </th>
+                <td></td>
+                <td></td>
+                <td>Somewhere, Some State, 00000</td>
+            </tr>
+            <tr id="phone">
+                <th scope="row">Phone Number: </th>
+                <td></td>
+                <td></td>
+                <td>(555) 555-5555</td>
+            </tr>
+            <tr id="email">
+                <th scope="row">Email: </th>
+                <td></td>
+                <td></td>
+                <td>myemail@email.com</td>
+            </tr>
+        </table>
+        <p>If you would like to update your account information, please click below</p>
+        <a href="NewContact.html"><input type="submit" name="submit" value="enter new info"/></a>
 
     </div>
     <div class="MApreferences">
@@ -50,6 +78,7 @@
         </p>
     </div>
     <footer class="footnotes">
+        <p>Would you like to leave some feedback? If so, please click <a href="Feedback.html"><em>here!</em></a> </p>
         <p>Contact Information - Phone: (555) 555-5555,
             <a href="contact@Rent-A-Rig.com">contact@Rent-A-Rig.com</a> </p>
     </footer>
