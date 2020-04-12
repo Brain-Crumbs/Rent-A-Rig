@@ -1,36 +1,39 @@
-.spacer {
-    margin: 2px;
-}
-
 header {
     text-align: center;
 }
-
 body {
-    background: lightgray;
+    background: #DCDCDD;
     margin: 30px;
-}
-
-.myContainer {
-    border-bottom: darkgray 2px solid;
-}
-.headspace {
-    text-align: center;
-    padding: 5px;
-    border: 1px gray solid;
-}
-.myRow, .myCol {
-    text-align: center;
-    vertical-align: center;
 }
 footer {
     text-align: center;
 }
-.updateInfo, .history, .MApreferences {
+ul { /*adding bottom border to address book list*/
+    border-bottom: 2px solid #515751;
+    padding-bottom: 5px;
+    vertical-align: center;
+}
+h1.headspace { /*Header setup*/
     text-align: center;
 }
-.myOptions {
+.myRow, .myCol { /*set up text in the tables*/
+    text-align: center;
+    vertical-align: center;
+}
+.updateInfo, .history, .MApreferences, .newcontact { /*text setup*/
+    text-align: center;
+}
+.myOptions { /*text setup for My Account options*/
     font-size: 18pt;
-    text-decoration-color: #36453B;
     text-align: center;
 }
+.spacer { /*setup for text in New Contact Info Table*/
+    margin: 2px;
+}
+.headofpage {
+    text-align: center;
+}
+.addtobook {
+    text-align: center;
+}
+

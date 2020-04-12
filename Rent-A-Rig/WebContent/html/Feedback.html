@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>Feedback</title>
     <link href="../mainStyle.css" type="text/css" rel="stylesheet">
-    <link href="../MyAccountHistory.css" rel="stylesheet" type="text/css">
+    <link href="FeedbackStyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div class="myNav">
+    <nav>Romy's Navigation Section</nav>
+</div> <!--Navigation Section-->
     <div>
         <fieldset>
-            <legend>Review Time!</legend>
+            <legend class="reviewbox">Review Time!</legend>
             <form>
                 <p>How did you hear about us?
                     <select name="recommend">
@@ -21,7 +24,7 @@
                         <option value="other..">other..</option>
                     </select>
                 </p>
-                <p>Would you visit us &/or use our services again?</p>
+                <p>Would you recommend us to a friend/colleague?</p>
                 <input type="radio" name="Yes" value="Yes" checked="checked"/> Yes
                 <input type="radio" name="No" value="No"/>No<br>
                 <p>Comments:</p>
@@ -34,5 +37,10 @@
             </form>
         </fieldset>
     </div>
+    <footer class="footnotes">
+        <p>To return to your account, please click <a href="MyAccount.html"><em>here!</em></a> </p>
+        <p>Contact Information - Phone: (555) 555-5555,
+            <a href="contact@Rent-A-Rig.com">contact@Rent-A-Rig.com</a> </p>
+    </footer>
 </body>
 </html>

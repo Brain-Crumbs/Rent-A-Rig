@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>New Contact Information</title>
-    <link type="text/css" rel="stylesheet" href="../MyAccountHistory.css">
+    <link  href="ContactInfoStyle.css" type="text/css" rel="stylesheet">
     <link href="../mainStyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div class="myNav">
+    <nav>Romy's Navigation Section</nav>
+</div> <!--Navigation Section-->
 <div id="MApersonal" class="newcontact">
     <br><fieldset class="newcontact"> <!--remove the fieldset and make in to a table or use border. -->
     <legend><strong>Please Enter New Contact Details</strong></legend>
@@ -24,6 +27,7 @@
             <p><input class="spacer" type="radio" name="Shipping" value="Shipping"/>Shipping <!-- why does this allow multiple radio buttons to be selected???? -->
             <input class="spacer" type="radio" name="Billing" value="Billing"/>Billing
             <input class="spacer" type="radio" name="Both" value="Both" checked="checked"/>Both</label></p>
+            <button type="submit"><a href="AddressBook.html">Add to Address Book</a> </button><br><br>
         <label>Credit Card: <br>
             <input class="spacer" type="text" name="Credit Card Number"/><br>
             <input class="spacer" type="text" name="Name on Card"/><br>
@@ -32,7 +36,13 @@
             <button type="submit"><a href="MyAccount.html">Submit</a> </button> <br>
     </form>
 </fieldset>
-
+    <div class="container myOptions">
+        <div class="row myRow1">
+            <a href="OrderHistory.html"><strong><em>Order History *</em></strong></a>
+            <a href="AddressBook.html"><strong><em>* Address  *</em></strong></a>
+            <a href="MyAccount.html"><strong><em>* My Account</em></strong></a>
+        </div>
+    </div>
 </div>
 <footer class="contactFoot">
     <p>Would you like to leave some feedback? If so, please click <a href="Feedback.html"><em>here!</em></a> </p>

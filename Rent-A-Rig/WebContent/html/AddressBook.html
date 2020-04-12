@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <title>Address Book</title>
     <link href="../mainStyle.css" rel="stylesheet" type="text/css">
-    <link href="../ContactInfoStyle.css" rel="stylesheet" type="text/css">
+    <link href="ContactInfoStyle.css" rel="stylesheet" type="text/css">
+    <style>
+        .addtobook {
+            position: center;
+        }
+    </style>
 </head>
 <body>
+<div class="myNav">
+    <nav>Romy's Navigation Section</nav>
+</div> <!--Navigation Section-->
 <header>
     <h1>Address Book</h1>
 </header>
-<ul>
-    <li>Your address book is currently empty.</li>
-</ul>
+<button class="addtobook" type="submit"><a href="NewContact.html"> Add to Book of Addresses</a></button>
+<div class="container-fluid book">
+    <ul>
+        <li>Your address book is currently empty.</li>
+    </ul>
+
+</div>
+
 <div class="container myOptions">
     <div class="row myRow1">
-        <a href="NewContact.html"><strong><em>Update Contact Info</em></strong></a>
-        <a href="OrderHistory.html"><strong><em>Order History</em></strong></a>
-        <a href="AddressBook.html"><strong><em>Address Book</em></strong></a>
-        <a href="MyAccount.html"><strong><em>My Account</em></strong></a>
-    </div>
+        <a href="NewContact.html"><strong><em>Update Contact Info *</em></strong></a>
+        <a href="OrderHistory.html"><strong><em>* Order History *</em></strong></a>
+        <a href="AddressBook.html"><strong><em>* Address Book *</em></strong></a>
+        <a href="MyAccount.html"><strong><em>* My Account</em></strong></a>
+        </div>
 </div>
 <footer class="contactFoot">
     <p><br>Would you like to leave some feedback? If so, please click <a href="Feedback.html"><em>here!</em></a> </p>
