@@ -1,0 +1,36 @@
+.spacer {
+    margin: 1px;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background: lightgray;
+    margin: 30px;
+}
+
+.myContainer {
+    border-bottom: darkgray 2px solid;
+}
+.headspace {
+    text-align: center;
+    padding: 5px;
+    border: 1px gray solid;
+}
+.myRow, .myCol {
+    text-align: center;
+    vertical-align: center;
+}
+footer {
+    text-align: center;
+}
+.updateInfo, .history, .MApreferences {
+    text-align: center;
+}
+.myOptions {
+    font-size: 18pt;
+    text-decoration-color: #36453B;
+    text-align: center;
+}

@@ -25,7 +25,6 @@ p.MAhistories {
 h1.orderpage, .accountpage {
     padding: 15px;
     word-spacing: 10px;
-    position: center;
     text-transform: uppercase;
     letter-spacing: .2em;
     margin: 10px;
@@ -57,13 +56,16 @@ div.footlike {
     text-align: center;
 }
 
-.spacer {
-    margin: 1px;
-}
-
 .table {
     text-align: left;
     border: 1px solid #36453B;
     column-gap: 50px;
     padding: 10px;
+    table-layout: auto;
+}
+footer.contactFoot {
+    padding: 10px;
+    margin: auto;
+    width: 35%;
+    text-align: center;
 }

@@ -1,86 +1,130 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Account</title>
-    <link href="mainStyle.css" rel="stylesheet" type="text/css" >
-    <link href="MyAccountHistory.css" rel="stylesheet" type="text/css">
+    <title>My Account - Bootstrap</title>
+    <!--    <link href="../mainStyle.css" rel="stylesheet" type="text/css" >-->
+    <link href="ContactInfoStyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <style>
+        body {
+            background: lightgrey;
+        }
+    </style>
 </head>
 <body>
-    <section>
-        <nav>Romy's Navigation Section</nav>
-    </section>
-
-    <header>
-        <h1 class="accountpage">My Account</h1>
-    </header>
-    <div id="MApersonal" class="box">
-        <h2>My Personal Information:</h2>
-        <table class="table">
-            <tr id="name">
-                <th scope="row">Name: </th>
-                <td></td>
-                <td></td>
-                <td>Customer 1</td>
-            </tr>
-            <tr id="add1">
-                <th scope="row">Address Line 1:</th>
-                <td></td>
-                <td></td>
-                <td>Address line 1</td>
-            </tr>
-            <tr id="add2">
-                <th scope="row">Address Line 2: </th>
-                <td></td>
-                <td></td>
-                <td>Address line 2</td>
-            </tr>
-            <tr id="zip">
-                <th scope="row">City, State, Zip: </th>
-                <td></td>
-                <td></td>
-                <td>Somewhere, Some State, 00000</td>
-            </tr>
-            <tr id="phone">
-                <th scope="row">Phone Number: </th>
-                <td></td>
-                <td></td>
-                <td>(555) 555-5555</td>
-            </tr>
-            <tr id="email">
-                <th scope="row">Email: </th>
-                <td></td>
-                <td></td>
-                <td>myemail@email.com</td>
-            </tr>
-        </table>
-        <p>If you would like to update your account information, please click below</p>
-        <a href="NewContact.html"><input type="submit" name="submit" value="enter new info"/></a>
-
+<div class="myNav">
+    <nav>Romy's Navigation Section</nav>
+</div> <!--Navigation Section-->
+<div class="container-fluid header">
+    <h1 class="headspace">
+        My Account
+    </h1>
+</div>
+<br>
+<div class="container-fluid myContainer">
+    <div class="row myRow">
+        <div class="col-lg-6 myCol">
+            <p><strong>Name:</strong></p>
+        </div>
+        <div class="col-lg-6 myCol">
+            <p>Customer 1</p>
+        </div>
     </div>
-    <div class="MApreferences">
-        <p>Select Your Preferred method of contact:</p>
+    <div class="row myRow">
+        <div class="col-lg-6 myCol">
+            <p><strong>Address line 1:</strong></p>
+        </div>
+        <div class="col-lg-6 myCol">
+            <p>555 Main St.</p>
+        </div>
+    </div>
+    <div class="row myRow">
+        <div class="col-lg-6 myCol">
+            <p><strong>Address line 2:</strong></p>
+        </div>
+        <div class="col-lg-6 myCol">
+            <p>Apt #</p>
+        </div>
+    </div>
+    <div class="row myRow">
+        <div class="col-lg-6 myCol">
+            <p><strong>City, State:</strong></p>
+        </div>
+        <div class="col-lg-6 myCol">
+            <p>Someplace, USA</p>
+        </div>
+    </div>
+    <div class="row myRow">
+        <div class="col-lg-6 myCol">
+            <p><strong>Zip:</strong></p>
+        </div>
+        <div class="col-lg-6 myCol">
+            <p>12345</p>
+        </div>
+    </div>
+    <div class="row myRow">
+        <div class="col-lg-6 myCol">
+            <p><strong>Phone:</strong></p>
+        </div>
+        <div class="col-lg-6 myCol">
+            <p>(555) 555-5555</p>
+        </div>
+    </div>
+    <div class="row myRow">
+        <div class="col-lg-6 myCol">
+            <p><strong>Email: </strong></p>
+        </div>
+        <div class="col-lg-6 myCol">
+            <p>myemail@email.com</p>
+        </div>
+    </div>
+    <div class="row myRow">
+        <div class="col-lg-6 myCol">
+            <p><strong>Account Number: </strong></p>
+        </div>
+        <div class="col-lg-6 myCol">
+            <p>123456789</p>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container-fluid MApreferences">
+    <p>Select Your Preferred method of contact:
         <select name="Preferences:">
             <option value="Email">Email</option>
             <option value="Phone Call">Phone Call</option>
             <option value="snail mail">Snail Mail</option>
         </select>
-        <p>Preferred time of day:</p>
+        Preferred time of day:
         <select name="Time of Day">
             <option value="morning">Morning (8am - 12noon)</option>
             <option value="afternoon">Afternoon (12noon - 5pm)</option>
             <option value="evening">Evening (5pm - 10pm)</option>
-        </select>
+        </select></p>
+</div>
+<br>
+<div class="container myOptions">
+    <div class="row myRow1">
+        <div class="col-med-4 col-sm-6 col-lg-4 myCol">
+            <p><a href="NewContact.html"><strong><em>Update Contact Info</em></strong></a></p>
+        </div>
+        <div class="col-med-4 col-sm-6 col-lg-4 myCol">
+            <p><a href="OrderHistory.html"><strong><em>Order History</em></strong></a></p>
+        </div>
+        <div class="col-med-4 col-sm-6 col-lg-4 myCol">
+            <p><a href="AddressBook.html"><strong><em>Address Book</em></strong></a></p>
+        </div>
     </div>
-    <div>
-        <p class="MAhistories">Order History available <a href="OrderHistory.html">
-            <strong><em>here!</em></strong></a>
-        </p>
-    </div>
-    <footer class="footnotes">
-        <p>Would you like to leave some feedback? If so, please click <a href="Feedback.html"><em>here!</em></a> </p>
-        <p>Contact Information - Phone: (555) 555-5555,
-            <a href="contact@Rent-A-Rig.com">contact@Rent-A-Rig.com</a> </p>
-    </footer>
+</div>
+<footer class="contactFoot">
+    <p><br>Would you like to leave some feedback? If so, please click <a href="Feedback.html"><em>here!</em></a> </p>
+    <p>Contact Information - Phone: (555) 555-5555, <a href="contact@Rent-A-Rig.com">contact@Rent-A-Rig.com</a> </p>
+</footer> <!--Includes contact info and feedback link-->
+<script src="Methods.js" type="text/javascript"/>
 </body>
 </html>
