@@ -9,30 +9,39 @@ body{
 	height:auto;
 }
 
-.container1{
-	background-color: pink;
-	text-align: center;
-	padding:20px;
+.container{
 
+	text-align: left;
+	padding:20px;
+	text-color:black;
 }
 .image1{
 	background-image: url("../resources/programming-code-abstract-technology-background-software-1024x756.jpg");
 	background-size: cover;
 }
-.container2{
-	
-	background-color:#596869;
-	text-align: center;
-	padding:10px;
-}  
+
 .container3{
 
 	text-align: center;
 }  
+
+.image2{
+	background-image: url("../resources/best-small-laptops-e1566877552844.jpg");
+	background-size: cover;
+	height:600px;
+	weight:600px;
+}
 .container4{
 	
 	text-align: center;
-}  
+} 
+
+.image3{
+	background-image: url("../resources/dell-ultrasharp-49-inch-monitor-u4919dw-30008-feat-1200x630-c-ar1.91.jpg");
+	background-size: cover;
+	height:600px;
+	weight:600px;
+} 
 .container5{
 
 	text-align: center

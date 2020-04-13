@@ -4,39 +4,101 @@
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="../css/mainStyle.css">
 <link rel="stylesheet" type="text/css" href="../css/homePage.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 
 <title>Home Page</title>
 
 </head>
 
 <body>
+	<nav id="navbar"></nav>
+	<footer id="footer"></footer>
+
 	<div class="jumbotron image1">
 		<div class="container">
-			<h1>Rent-A-Rig</h1>
-			<h2>The Right Products For All Your Needs</h2>
+			<h1 class="display-3 text-dark">Rent-A-Rig&#169</h1>
+			<h2 class="text-white">The Right Products For All Your Needs</h2>
 		</div>
-	</div> 
-	
-	<div class="container2">
-		<h3>Rent Powerful Technology For Your Event Or Tradeshow</h3>
-		<p>There is no need to compromise power or quality just because you need a lot of equipment. At Intel Demo Depot, we understand the importance of receiving the highest quality equipment delivered safely, on time, and stress-free to your event. We rent powerful gaming machines, notebooks, and tablets featuring Intel architecture, and monitors from 20" to 90" with all the required cabling, stands, and other needs for your event. With professionally managed inventory and competitive pricing, you can trust Intel with your technology, performance, and budgetary needs.</p>
 	</div>
-	
-	<div class="container3">
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-toggle="modal"
+		data-target="#exampleModalScrollable">Launch demo modal</button>
+
+	<!-- Modal -->
+	<div class="modal" id="exampleModalScrollable" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalScrollableLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenteredLabel">Modal
+						title</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">...</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary"
+						data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="card-deck">
+		<div class="card">
+			<h3 class="card-header">Featured</h3>
+			<div class="card-body">
+				<h4 class="card-title">Special title treatment</h4>
+				<p class="card-text">With supporting text below as a natural
+					lead-in to additional content.</p>
+				<a href="#!" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+		<div class="card">
+			<h3 class="card-header">Featured</h3>
+			<div class="card-body">
+				<h4 class="card-title">Special title treatment</h4>
+				<p class="card-text">With supporting text below as a natural
+					lead-in to additional content.</p>
+				<a href="#!" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+		<div class="card">
+			<h3 class="card-header">Featured</h3>
+			<div class="card-body">
+				<h4 class="card-title">Special title treatment</h4>
+				<p class="card-text">With supporting text below as a natural
+					lead-in to additional content.</p>
+				<a href="#!" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="container3 image2">
 		<h3>Product #1</h3>
 		<button type="button" class="btn btn-info">Product #1</button>
 	</div>
-	
-	<div class="container4">
+
+	<div class="container4 image3">
 		<h3>Product #2</h3>
-		<button type="button" class="btn btn-warning">Product #2</button>
+		<button type="button" class="btn btn-info">Product #2</button>
 	</div>
-	
+
 	<div class="container5">
 		<h2>Product #3</h2>
 		<button>Go to product three</button>
 	</div>
+
 	<div class="container6">
 		<h2>GET A FREE QUOTE TODAY!</h2>
 		<button>Let's go!</button>
