@@ -28,3 +28,13 @@ footer {
 a {
     text-decoration: none;
 }
+.btn-outline-success {
+	color: #30BDF4;
+	border-color: #30BDF4;
+}
+
+.btn-outline-success:hover {
+	color: #fff;
+	background-color: #30BDF4;
+	border-color: #30BDF4;
+}
