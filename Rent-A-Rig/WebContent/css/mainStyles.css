@@ -32,3 +32,9 @@ a {
 nav {
 	padding:10px;
 }
+
+.textbox {
+	border: #ffffff 1px solid;
+	border-background-color: #ffffff;
+	opacity: 30%;
+}
