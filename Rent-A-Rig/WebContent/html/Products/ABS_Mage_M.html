@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../../css/mainStyle.css">
+<link rel="stylesheet" type="text/css" href="../../css/products.css">
+</head>
+<body>
+	<div class="col-md-5">
+		<img class="img-fluid rounded center-block"
+			src="../../resources/ABS_Mage_M.jpg" alt="ABS_Mage_M_img">
+	</div>
+	<div class="col-md-7">
+		<h3>ABS Mage M Gaming Desktop</h3>
+		<p>Ryzen 5 3600 - Radeon RX 5700 XT - 16GB DDR4 3000MHz - 512GB
+			SSD - Gaming Desktop PC</p>
+		<p>
+			<b>Pricing: </b>$50 per Month
+		</p>
+		<div class="number-input md-number-input float-left">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+				class="minus"></button>
+			<input class="quantity" min="0" name="quantity" value="1"
+				type="number">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+				class="plus"></button>
+		</div>
+		<a class="btn btn-primary" href="#">Add to Cart</a>
+	</div>
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card">
+			<div class="card-header" role="tab" id="ABS_Mage_M_headingOne">
+				<h5 class="mb-0">
+					<a data-toggle="collapse" data-parent="#accordion"
+						href="#ABS_Mage_M_Overview" aria-expanded="false"
+						aria-controls="ABS_Mage_M_Overview"> Overview </a>
+				</h5>
+			</div>
+
+			<div id="ABS_Mage_M_Overview" class="collapse" role="tabpanel"
+				aria-labelledby="ABS_Mage_M_headingOne">
+				<div class="card-block">
+					<p>Take your home gaming and entertainment to the next level.
+						Equipped with Ryzen 5 3600 (6 cores, 12 threads) processor and
+						performance-class AMD Radeon RX 5700 XT-GPU based graphics, this
+						desktop powers your rendering and editing workflows, as well as
+						smooth gaming at up to 1440p in the hottest titles. The
+						clean-designed mid tower is thermally-optimized with four 120mm
+						RGB fans, and features an edge-to-edge tempered glass side panel
+						to showcase the clean build bathed in brilliant RGB lighting. A
+						gaming keyboard and a mouse are included for out-of-the-box use.</p>
+					<p>
+						<b>Ryzen 5 3600 Processor</b><br> Six-core, 12-thread
+								processor based on 7nm Zen 2 architecture Everyone deserves a
+								powerful processor. Uncompromising features and smooth
+								performance are finally the standard for every gamer- and
+								artist-oriented system. Powered by the amazing Zen 2
+								architecture and manufactured using 7nm process technology, the
+								Ryzen 5 3600 has six cores and 12 threads, offering exceptional
+								parallel computing power to handle demanding tasks and
+								multitasking. PCIe 4.0 allows you to take full advantage of the
+								new-generation SSDs and next-generation graphics card. 
+					</p>
+					<p>
+						<b>AMD Radeon RX 5700 XT Graphics</b><br> Great gaming
+						experiences are created by bending the rules. The all-new RDNA
+						powered Radeon RX 5700 XT GPU allows for exceptional performance
+						and high-fidelity gaming. Take control with Radeon RX 5700 XT-GPU
+						based graphics card and experience powerful, accelerated gaming
+						customized for you.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" role="tab" id="ABS_Mage_M_headingTwo">
+				<h5 class="mb-0">
+					<a class="collapsed" data-toggle="collapse"
+						data-parent="#accordion" href="#ABS_Mage_M_Specs" aria-expanded="false"
+						aria-controls="ABS_Mage_M_Specs"> Specifications </a>
+				</h5>
+			</div>
+			<div id="ABS_Mage_M_Specs" class="collapse" role="tabpanel"
+				aria-labelledby="ABS_Mage_M_headingTwo">
+				<div class="card-block">
+					<ul>
+						<li><b>Processor</b> Ryzen 5 3rd Gen 3.60 GHz 32 MB 64 bit
+							6-Core Processor</li>
+						<li><b>Memory</b> 16 GB DDR4 3000 MHz</li>
+						<li><b>Storage</b> 512 GB SSD</li>
+						<li><b>Graphics</b> AMD Radeon RX 5700 XT 8 GB GDDR6</li>
+						<li><b>Power Supply</b> 650W 80+ Gold</li>
+						<li><b>Case</b> Rosewill SPECTRA D100 ATX Mid Tower With
+							Tempered Glass Case 4 x 120 mm RGB fans</li>
+						<li><b>Chipset</b> AMD B450</li>
+						<li><b>Graphics</b> AMD Radeon RX 5700 XT 8 GB GDDR6 VR ready</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

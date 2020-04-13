@@ -18,32 +18,44 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <!-- Jquery to fill in products -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="../../js/products/desktops.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-		<div class="container">
-			<a class="navbar-brand" href="#"> <img
-				src="http://placehold.it/150x50?text=Logo" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#navbarResponsive" aria-controls="navbarResponsive"
-				aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a class="nav-link" href="#">Home
-							<span class="sr-only">(current)</span>
-					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Services</a>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="#">Contact</a>
-					</li>
-				</ul>
-			</div>
+
+	<nav id="navbar"></nav>
+	<footer id="footer"></footer>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="home.html">Rent-A-Rig</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarsExampleDefault"
+			aria-controls="navbarsExampleDefault" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link"
+					href="home.html">Home <span class="sr-only">(current)</span></a></li>
+
+				<li class="nav-item"><a class="nav-link" href="products.html">Products</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="login.html">Log-in/Register</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="account.html">Account</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="cart.html">Cart</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search"
+					aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">GO</button>
+			</form>
 		</div>
 	</nav>
 
@@ -53,15 +65,17 @@
 			<div class="row">
 				<div class="col-xs-12 ">
 					<nav>
-						<div class="nav nav-tabs nav-pills nav-fill" id="nav-tab" role="tablist">
+						<div class="nav nav-tabs nav-pills nav-fill" id="nav-tab"
+							role="tablist">
 							<a class="nav-item nav-link active" id="nav-desktop-tab"
 								data-toggle="tab" href="#nav-desktop" role="tab"
 								aria-controls="nav-desktop" aria-selected="true">Desktops</a> <a
 								class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-								href="#nav-laptops" role="tab" aria-controls="nav-laptops"
-								aria-selected="false">Laptops</a> <a class="nav-item nav-link"
-								id="nav-accessories-tab" data-toggle="tab" href="#nav-accessories"
-								role="tab" aria-controls="nav-accessories" aria-selected="false">Accessories</a>
+								href="#nav-monitors" role="tab" aria-controls="nav-monitors"
+								aria-selected="false">Monitors</a> <a class="nav-item nav-link"
+								id="nav-accessories-tab" data-toggle="tab"
+								href="#nav-accessories" role="tab"
+								aria-controls="nav-accessories" aria-selected="false">Accessories</a>
 						</div>
 					</nav>
 					<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -76,50 +90,51 @@
 								</h1>
 
 								<!-- Product One -->
-								<div class="row" id="desktop-1"></div>
+								<div class="row" id="RoG_Strix_GL12"></div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Two -->
-								<div class="row" id="desktop-2"></div>
+								<div class="row" id="ABS_Mage_M"></div>
 								<!-- /.row -->
 								<hr>
-								
+
 								<!-- Product Three -->
-								<div class="row" id="desktop-3"></div>
+								<div class="row" id="MSI_Trident_XPlus"></div>
 								<!-- /.row -->
 								<hr>
 
 							</div>
 						</div>
-						
-						<div class="tab-pane fade" id="nav-laptops" role="tabpanel"
-							aria-labelledby="nav-laptops-tab"><!-- Page Content -->
+
+						<div class="tab-pane fade" id="nav-monitors" role="tabpanel"
+							aria-labelledby="nav-monitor-tab">
+							<!-- Page Content -->
 							<div class="container">
 
 								<!-- Page Heading -->
 								<h1 class="my-4">
-									Laptops <small>Powerful mobile devices to game on the go</small>
+									Monitors <small>Large, Fast, and Beautiful Displays</small>
 								</h1>
 
 								<!-- Product One -->
-								<div class="row" id="laptop-1"></div>
+								<div class="row" id="ASUS_VG245H"></div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Two -->
-								<div class="row" id="laptop-2"></div>
+								<div class="row" id="monitor-2"></div>
 								<!-- /.row -->
 								<hr>
-								
+
 								<!-- Product Three -->
-								<div class="row" id="laptop-3"></div>
+								<div class="row" id="monitor-3"></div>
 								<!-- /.row -->
 								<hr>
 
 							</div>
 						</div>
-						
+
 						<div class="tab-pane fade" id="nav-accessories" role="tabpanel"
 							aria-labelledby="nav-accessories-tab">
 							<!-- Page Content -->
@@ -139,7 +154,7 @@
 								<div class="row" id="mouse-1"></div>
 								<!-- /.row -->
 								<hr>
-								
+
 								<!-- Product Three -->
 								<div class="row" id="keyboard-1"></div>
 								<!-- /.row -->
@@ -153,8 +168,114 @@
 			</div>
 		</div>
 	</section>
-
-
+	<!-- Footer -->
+	<footer class="page-footer font-small mdb-color pt-4">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+			<!-- Footer links -->
+			<div class="row text-center text-md-left mt-3 pb-3">
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold">Rent-A-Rig</h6>
+					<p>The Rig you need for your next vacation, conference, or your
+						gaming needs. We got you covered!</p>
+				</div>
+				<!-- Grid column -->
+				<hr class="w-100 clearfix d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+					<p>
+						<a href="#!">Gaming Desktops</a>
+					</p>
+					<p>
+						<a href="#!">Portable PCs</a>
+					</p>
+					<p>
+						<a href="#!">Accessories</a>
+					</p>
+					<p>
+						<a href="#!">Tablets</a>
+					</p>
+				</div>
+				<!-- Grid column -->
+				<hr class="w-100 clearfix d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+					<p>
+						<a href="#!">Your Account</a>
+					</p>
+					<p>
+						<a href="#!">Shopping Cart</a>
+					</p>
+					<p>
+						<a href="#!">Register / Log-in</a>
+					</p>
+					<p>
+						<a href="#!">Contact Us</a>
+					</p>
+				</div>
+				<!-- Grid column -->
+				<hr class="w-100 clearfix d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+					<p>
+						<i class="fas fa-home mr-3"></i> Seattle, WA 98106, US
+					</p>
+					<p>
+						<i class="fas fa-envelope mr-3"></i>Rent.A.Rig@email.com
+					</p>
+					<p>
+						<i class="fas fa-phone mr-3"></i> (206) 555-5555
+					</p>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Footer links -->
+			<hr>
+			<!-- Grid row -->
+			<div class="row d-flex align-items-center">
+				<!-- Grid column -->
+				<div class="col-md-7 col-lg-8">
+					<!--Copyright-->
+					<p class="text-center text-md-left">
+						© 2020 Copyright: <a href="#"> <strong>RentARig</strong>
+						</a>
+					</p>
+				</div>
+				<!-- Grid column -->
+				<div class="col-md-5 col-lg-4 ml-lg-0">
+					<!-- Social buttons -->
+					<div class="text-center text-md-right">
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item"><a
+								class="btn-floating btn-sm rgba-white-slight mx-1"> <i
+									class="fab fa-facebook-f"></i>
+							</a></li>
+							<li class="list-inline-item"><a
+								class="btn-floating btn-sm rgba-white-slight mx-1"> <i
+									class="fab fa-twitter"></i>
+							</a></li>
+							<li class="list-inline-item"><a
+								class="btn-floating btn-sm rgba-white-slight mx-1"> <i
+									class="fab fa-google-plus-g"></i>
+							</a></li>
+							<li class="list-inline-item"><a
+								class="btn-floating btn-sm rgba-white-slight mx-1"> <i
+									class="fab fa-linkedin-in"></i>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+		</div>
+		<!-- Footer Links -->
+	</footer>
+	<!-- Footer -->
 
 
 </body>
