@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Account - Bootstrap</title>
+    <title>My Account</title>
     <link rel="stylesheet" href="../css/mainStyles.css" type="text/css">
+    <link rel="stylesheet" href="../css/ContactInfoStyle.css" type="text/css">
     <link
             href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             rel="stylesheet" id="bootstrap-css">
@@ -12,21 +13,19 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <script src="../js/Rent-A-Rig.js"></script>
-    <style>
-	.headspace {
-		text-align:center;
-	}
-    </style>
 </head>
 <body>
 <div class="myNav">
     <p></p><nav id="navbar"></nav></div>
-</div> <!--Navigation Section-->
-<hr>
+<!--Navigation Section-->
+
 <div class="container-fluid headofpage">
-    <br><br><h1 class="headspace">
+    <br><br>
+    <header class="col-lg-12 col-med-8 col-sm-6 col-xs-4 headspace">
+    <h1 >
         My Account
     </h1>
+    </header>
 </div>
 <hr>
 <div class="container-fluid myContainer">
@@ -115,17 +114,21 @@
 <hr>
 <div class="container myOptions">
     <div class="row myRow1">
-        <div class="col-med-4 col-sm-6 col-lg-4 myCol">
+			<div class="col-med-4 col-sm-6 col-lg-3 myCol">
             <p><a href="NewContact.html"><strong><em>Update Contact Info</em></strong></a></p>
         </div>
-        <div class="col-med-4 col-sm-6 col-lg-4 myCol">
+			<div class="col-med-4 col-sm-6 col-lg-3 myCol">
             <p><a href="OrderHistory.html"><strong><em>Order History</em></strong></a></p>
         </div>
-        <div class="col-med-4 col-sm-6 col-lg-4 myCol">
+			<div class="col-med-4 col-sm-6 col-lg-3 myCol">
             <p><a href="AddressBook.html"><strong><em>Address Book</em></strong></a></p>
         </div>
+			<div class="col-med-4 col-sm-6 col-lg-3 myCol">
+	        	<a href="FAQ.html"><strong><em>FAQ</em></strong></a>
+		</div>
     </div>
 </div>
+<hr>
 <footer id="footer">
 </footer> <!--Includes contact info and feedback link-->
 </body>

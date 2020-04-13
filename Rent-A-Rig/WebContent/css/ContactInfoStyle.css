@@ -1,10 +1,8 @@
 header {
     text-align: center;
+    
 }
-body {
-    background: #DCDCDD;
-    margin: 30px;
-}
+
 footer {
     text-align: center;
 }
@@ -13,27 +11,22 @@ ul { /*adding bottom border to address book list*/
     padding-bottom: 5px;
     vertical-align: center;
 }
-h1.headspace { /*Header setup*/
-    text-align: center;
-}
 .myRow, .myCol { /*set up text in the tables*/
-    text-align: center;
+    text-align: left;
     vertical-align: center;
 }
-.updateInfo, .history, .MApreferences, .newcontact { /*text setup*/
-    text-align: center;
+.myContainer {
+	text-align:left;
 }
 .myOptions { /*text setup for My Account options*/
-    font-size: 18pt;
+    font-size: 16pt;
     text-align: center;
 }
 .spacer { /*setup for text in New Contact Info Table*/
     margin: 2px;
 }
-.headofpage {
-    text-align: center;
-}
-.addtobook {
-    text-align: center;
-}
-
+ h3 {
+ 	text-align: center;
+ }
+ 
+ 
