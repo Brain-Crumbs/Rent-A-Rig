@@ -2,6 +2,6 @@
  * 
  */
 $(document).ready(function(){
-    $('#navbar').load("../html/navbar.html");
-    $('#footer').load("../html/footer.html");
+    $('#navbar').load("navbar.html");
+    $('#footer').load("footer.html");
 });
