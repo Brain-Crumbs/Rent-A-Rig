@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Update Contact Information</title>
 <link href="../css/ContactInfoStyle.css" type="text/css" rel="stylesheet">
-<link href="../css/mainStyle.css" rel="stylesheet" type="text/css">
+<link href="../css/mainStyles.css" rel="stylesheet" type="text/css">
 <link
 	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	rel="stylesheet" id="bootstrap-css">
@@ -30,7 +30,7 @@
 <hr>
 	<div id="MApersonal" class="newcontact">
 		<div>
-			<p><h3>Please Enter New Contact Details</h3></p>
+			<p><h3 class="col-lg-12 col-med-8 col-sm-4">Please Enter New Contact Details</h3></p>
 		</div>
 		<div class="container-fluid myContainer">
 			<div class="row myRow">
@@ -84,21 +84,54 @@
 					<input class="spacer" type="checkbox" name="Shipping" value="Shipping" />Shipping
 					<!-- why does this allow multiple radio buttons to be selected???? -->
 					<input class="spacer" type="checkbox" name="Billing" value="Billing" />Billing
-				</label><br>
+				</label><br><br>
 				<button type="submit">
 					<a href="AddressBook.html">Add to Address Book</a>
 				</button>
-				<br> <br> 
-				<label class="creditcard">Credit Card: <br> 
-					<input class="spacer" type="text" name="Credit Card Number" /><br> 
-					<input class="spacer" type="text" name="Name on Card" /><br> 
-					<input class="spacer" type="text" name="Expiration" /><br> 
-					<input class="spacer" type="text" name="CVV" /></label>
-				<p><button type="submit">
-					<a href="MyAccount.html">Submit</a>
-				</button></p>
-				<br>
-			</form>
+				<br><br>
+			<h3 class="container-fluid col-lg-12 col-med-8 col-sm-4">Please update Credit Card Info:</h3><br>
+				<div class="container-fluid myContainer">
+			<div class="row myRow">
+				<div class="col-lg-6 myCol">
+					<p><strong>Name:</strong></p>
+				</div>
+				<div class="col-lg-6 myCol">
+					<p><input class="space" type="text" name="name"/></p>
+				</div>
+			</div>
+			<div class="row myRow">
+				<div class="col-lg-6 myCol">
+					<p><strong>Credit Card #:</strong></p>
+				</div>
+				<div class="col-lg-6 myCol">
+					<p><input class="space" type="text" name="CC#"/></p>
+				</div>
+			</div>
+			<div class="row myRow">
+				<div class="col-lg-6 myCol">
+					<p><strong>Expiration Date:</strong></p>
+				</div>
+				<div class="col-lg-6 myCol">
+					<p><input class="space" type="text" name="Exp"/></p>
+				</div>
+			</div>
+			<div class="row myRow">
+				<div class="col-lg-6 myCol">
+					<p><strong>CVV:</strong></p>
+				</div>
+				<div class="col-lg-6 myCol">
+					<p><input class="space" type="text" name="CVV"/></p>
+				</div>
+			</div>
+			<div class="row myRow">
+				<div class="col-lg-6 myCol">
+					<p><strong>Billing Zip:</strong></p>
+				</div>
+				<div class="col-lg-6 myCol">
+					<p><input class="space" type="text" name="zip"/></p>
+				</div>
+			</div>
+			<button type="submit" name="submit" value="submit">Submit</button>
 		</div>
 		<hr>
 			<div class="col-med-4 col-sm-6 col-lg-3 myCol">
