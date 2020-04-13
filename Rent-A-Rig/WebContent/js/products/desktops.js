@@ -5,4 +5,7 @@ $(document).ready(function(){
 	$('#ASUS_VG245H').load("Products/ASUS_VG245H.html");
 	$('#ACER_Z1_Z321QU').load("Products/ACER_Z1_Z321QU.html");
 	$('#ASUS_XG32VQ').load("Products/ASUS_XG32VQ.html");
+	$('#Roswell_Fusion_C40').load("Products/Roswell_Fusion_C40.html");
+	$('#CM_Devastator_3').load("Products/CM_Devastator_3.html");
+	$('#CM_Storm_Devastator').load("Products/CM_Storm_Devastator.html");
 });
