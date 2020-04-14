@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/mainStyle.css">
+<link rel="stylesheet" type="text/css" href="../css/products.css">
+</head>
+<body>
+	<div class="col-md-5">
+		<img class="img-fluid rounded center-block"
+			src="../resources/Apple_iPad_Air.jpg"
+			alt="Apple_iPad_Air_GamingDesktop_img">
+	</div>
+	<div class="col-md-7">
+		<h3>Apple iPad Air MD788LL/A</h3>
+		<p>Apple A7 1 GB Memory 9.7" 2048 x 1536 Tablet (WiFi Only) iOS 7
+			Silver</p>
+		<p>
+			<b>Pricing: </b>$15 per Month
+		</p>
+		<div class="number-input md-number-input float-left">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+				class="minus"></button>
+			<input class="quantity" min="0" name="quantity" value="1"
+				type="number">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+				class="plus"></button>
+		</div>
+		<a class="btn btn-primary" href="#">Add to Cart</a>
+	</div>
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card">
+			<div class="card-header" role="tab" id="Apple_iPad_Air_headingOne">
+				<h5 class="mb-0">
+					<a data-toggle="collapse" data-parent="#accordion"
+						href="#Apple_iPad_Air_Overview" aria-expanded="false"
+						aria-controls="Apple_iPad_Air_Overview"> Overview </a>
+				</h5>
+			</div>
+
+			<div id="Apple_iPad_Air_Overview" class="collapse" role="tabpanel"
+				aria-labelledby="Apple_iPad_Air_headingOne">
+				<div class="card-block">You have to hold the iPad Air to
+					believe it. It's just 7.5 millimeters thick and weighs just one
+					pound. The stunning Retina display sits inside thinner bezels, so
+					all you see is your content. And an incredible amount of power lies
+					inside the sleek enclosure. You will do so much more with so much
+					less.</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" role="tab" id="Apple_iPad_Air_headingTwo">
+				<h5 class="mb-0">
+					<a class="collapsed" data-toggle="collapse"
+						data-parent="#accordion" href="#Apple_iPad_Air_Specs"
+						aria-expanded="false" aria-controls="Apple_iPad_Air_Specs">
+						Specifications </a>
+				</h5>
+			</div>
+			<div id="Apple_iPad_Air_Specs" class="collapse" role="tabpanel"
+				aria-labelledby="Apple_iPad_Air_headingTwo">
+				<div class="card-block">
+					<ul>
+						<li><b>CPU:</b> Apple A7</li>
+						<li><b>Storage:</b> 16 GB</li>
+						<li><b>Memory:</b> 1 GB</li>
+						<li><b>Screen Size:</b> 9.7"</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
