@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/mainStyles.css">
+<link rel="stylesheet" type="text/css" href="../css/products.css">
+</head>
+<body>
+	<div class="col-md-5">
+		<img class="img-fluid rounded center-block"
+			src="../resources/Lenovo_yoga_tab_3.jpg"
+			alt="Lenovo_yoga_tab_3_GamingDesktop_img">
+	</div>
+	<div class="col-md-7">
+		<h3>Lenovo YOGA Tab 3 8 ZA090094US</h3>
+		<p>Qualcomm APQ8009 (1.30GHz) 2 GB Memory 16 GB eMMC 8.0" 1280 x
+			800 Tablet PC Android 5.1 (Lollipop) Black</p>
+		<p>
+			<b>Pricing: </b>$10 per Month
+		</p>
+		<div class="number-input md-number-input float-left">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+				class="minus"></button>
+			<input class="quantity" min="0" name="quantity" value="1"
+				type="number">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+				class="plus"></button>
+		</div>
+		<a class="btn btn-primary" href="#">Add to Cart</a>
+	</div>
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card">
+			<div class="card-header" role="tab" id="Lenovo_yoga_tab_3_headingOne">
+				<h5 class="mb-0">
+					<a data-toggle="collapse" data-parent="#accordion"
+						href="#Lenovo_yoga_tab_3_Overview" aria-expanded="false"
+						aria-controls="Lenovo_yoga_tab_3_Overview"> Overview </a>
+				</h5>
+			</div>
+
+			<div id="Lenovo_yoga_tab_3_Overview" class="collapse" role="tabpanel"
+				aria-labelledby="Lenovo_yoga_tab_3_headingOne">
+				<div class="card-block">Get lost in your favorite movies with immersive Dolby atmos sound,
+				 play your favorite games on a crisp HD screen and snap selfies with built-in gesture controls. 
+				 All on a device weighing just over 1 pound for ultimate portability</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" role="tab" id="Lenovo_yoga_tab_3_headingTwo">
+				<h5 class="mb-0">
+					<a class="collapsed" data-toggle="collapse"
+						data-parent="#accordion" href="#Lenovo_yoga_tab_3_Specs"
+						aria-expanded="false" aria-controls="Lenovo_yoga_tab_3_Specs">
+						Specifications </a>
+				</h5>
+			</div>
+			<div id="Lenovo_yoga_tab_3_Specs" class="collapse" role="tabpanel"
+				aria-labelledby="Lenovo_yoga_tab_3_headingTwo">
+				<div class="card-block">
+					<ul>
+						<li><b>CPU:</b> Qualcomm APQ8009 (1.30GHz)</li>
+						<li><b>Storage:</b> 16 GB</li>
+						<li><b>Memory:</b> 2 GB</li>
+						<li><b>Screen Size:</b> 8.0"</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
