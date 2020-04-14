@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/mainStyles.css">
+<link rel="stylesheet" type="text/css" href="../css/products.css">
+</head>
+<body>
+	<div class="col-md-5">
+		<img class="img-fluid rounded center-block"
+			src="../resources/RoG_Strix_GL12_GamingDesktop_img.jpg"
+			alt="RoG_Strix_GL12_GamingDesktop_img">
+	</div>
+	<div class="col-md-7">
+		<h3>ROG Strix GL12 Gaming Desktop</h3>
+		<p>9th Gen 8-core Intel Core i7-9700F, NVIDIA GeForce RTX 2060 6
+			GB, 16 GB DDR4 RAM, 1 TB PCIe SSD, Windows 10 Home, Iron Grey,
+			GL12CX-NS763</p>
+		<p>
+			<b>Pricing: </b>$60 per Month
+		</p>
+		<div class="number-input md-number-input float-left">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+				class="minus"></button>
+			<input class="quantity" min="0" name="quantity" value="1"
+				type="number">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+				class="plus"></button>
+		</div>
+		<a class="btn btn-primary" href="#">Add to Cart</a>
+	</div>
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card">
+			<div class="card-header" role="tab" id="RoG_Strix_GL12_headingOne">
+				<h5 class="mb-0">
+					<a data-toggle="collapse" data-parent="#accordion"
+						href="#RoG_Strix_GL12_Overview" aria-expanded="false"
+						aria-controls="RoG_Strix_GL12_Overview"> Overview </a>
+				</h5>
+			</div>
+
+			<div id="RoG_Strix_GL12_Overview" class="collapse" role="tabpanel"
+				aria-labelledby="RoG_Strix_GL12_headingOne">
+				<div class="card-block">Rog Strix GL12 is engineered to quench
+					gamers’ never-ending thirst for extreme gaming horsepower paired
+					with striking, unconventional design. This Windows 10 Gaming
+					desktop is powered by up to a factory-overclocked 9th generation
+					Intel Core i7-9700k processor (Up to 5.0GHz full Octal-Core), with
+					NVIDIA GeForce RTX 2080 graphics for boundless gaming experiences.
+					Featuring ultra-fast SSD storage, The latest RAM, and Aura Sync RGB
+					lighting, ROG Strix GL12 is ready for any gaming challenge you can
+					throw at it! *The actual transfer speed of USB 3.0, 3.1 (Gen 1 and
+					2), and/or Type-C will vary depending on many factors including the
+					processing speed of the host device, file attributes and other
+					factors related to system configuration and your operating
+					environment.</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" role="tab" id="RoG_Strix_GL12_headingTwo">
+				<h5 class="mb-0">
+					<a class="collapsed" data-toggle="collapse"
+						data-parent="#accordion" href="#RoG_Strix_GL12_Specs"
+						aria-expanded="false" aria-controls="RoG_Strix_GL12_Specs">
+						Specifications </a>
+				</h5>
+			</div>
+			<div id="RoG_Strix_GL12_Specs" class="collapse" role="tabpanel"
+				aria-labelledby="RoG_Strix_GL12_headingTwo">
+				<div class="card-block">
+					<ul>
+						<li>NVIDIA GeForce RTX 2060 6 GB GDDR6 (2 x HDMI, 2 x DP)</li>
+						<li>9th Generation Intel Core i7-9700F 3.0 GHz (up to 4.7
+							GHz) and Z390 Board</li>
+						<li>1 TB HyperDrive M.2 SSD (up to 3200 MB/s), 16 GB 2666 MHz
+							DDR4 RAM, Windows 10 Home</li>
+						<li>eSports and LAN-party ready with hot-swap SSD bay and USB
+							3.1 Gen 1 front panel connections allows easily expandable
+							storage (*USB Transfer speed may vary. Learn more at ASUS
+							website)</li>
+						<li>Game your way with ASUS Aura Sync RGB chassis lighting;
+							keyboard and mouse included</li>
+						<li>DIMM.2 storage expansion module cooled by a dedicated
+							heat sink allows for easy upgrades and max performance</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

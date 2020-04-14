@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/mainStyles.css">
+<link rel="stylesheet" type="text/css" href="../css/products.css">
+</head>
+<body>
+	<div class="col-md-5">
+		<img class="img-fluid rounded center-block"
+			src="../resources/CM_Storm_Devastator.jpg"
+			alt="CM_Storm_Devastator_img">
+	</div>
+	<div class="col-md-7">
+		<h3>CM Storm Devastator</h3>
+		<p>LED Gaming Keyboard and Mouse Combo Bundle (Blue Edition)</p>
+		<p>
+			<b>Pricing: </b>$6 per Month
+		</p>
+		<div class="number-input md-number-input float-left">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+				class="minus"></button>
+			<input class="quantity" min="0" name="quantity" value="1"
+				type="number">
+			<button
+				onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+				class="plus"></button>
+		</div>
+		<a class="btn btn-primary" href="#">Add to Cart</a>
+	</div>
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="card">
+			<div class="card-header" role="tab"
+				id="CM_Storm_Devastator_headingOne">
+				<h5 class="mb-0">
+					<a data-toggle="collapse" data-parent="#accordion"
+						href="#CM_Storm_Devastator_Overview" aria-expanded="false"
+						aria-controls="CM_Storm_Devastator_Overview"> Overview </a>
+				</h5>
+			</div>
+
+			<div id="CM_Storm_Devastator_Overview" class="collapse"
+				role="tabpanel" aria-labelledby="CM_Storm_Devastator_headingOne">
+				<div class="card-block">
+					<p>The Devastator combo consists of a gaming keyboard and
+						mouse, both with full LED backlighting. An ergonomic, ultra
+						low-profile design on both pieces ensures increased comfort for
+						extended gaming sessions. Built to withstand everyday
+						wear-and-tear, Devastator is a reliable and affordable bundle for
+						casual and hardcore gamers alike.</p>
+					<p>
+						<b>FULLY LED BACKLIT</b><br>Both keyboard and mouse feature
+						LED backlighting for improved visibility in low-light conditions
+					</p>
+					<p>
+						<b> ERGONOMIC DESIGN</b><br>The keyboard and mouse have ultra
+						low profiles, designed to provide extended comfort while gaming.
+					</p>
+					<p>
+						<b>CUSTOM MEMBRANE KEYS</b><br>Optimized membrane design
+						provides enhanced durability and tactile feedback compared to
+						regular keyboards.
+					</p>
+
+					<p>
+						<b> DPI ON-THE-FLY</b><br>Precise mouse tracking with three
+						(3) changeable DPI modes (1000/1600/2000) with dedicated
+						on-the-fly button.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header" role="tab"
+				id="CM_Storm_Devastator_headingTwo">
+				<h5 class="mb-0">
+					<a class="collapsed" data-toggle="collapse"
+						data-parent="#accordion" href="#CM_Storm_Devastator_Specs"
+						aria-expanded="false" aria-controls="CM_Storm_Devastator_Specs">
+						Specifications </a>
+				</h5>
+			</div>
+			<div id="CM_Storm_Devastator_Specs" class="collapse" role="tabpanel"
+				aria-labelledby="CM_Storm_Devastator_headingTwo">
+				<div class="card-block">
+					<ul>
+						<li><b>Model</b> Cooler Master DEVASTATOR SGB-3010-KKMF1-US</li>
+						<li><b>Keyboard Interface</b> USB</li>
+						<li><b>Key Switch Type</b> Membrane</li>
+						<li><b>Backlit</b> Yes (blue)</li>
+						<li><b>Type</b> Wired</li>
+						<li><b>Mouse DPI</b> 2000 dpi</li>
+						<li><b>Buttons</b> 1 x Wheel</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
