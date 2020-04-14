@@ -19,7 +19,7 @@ ul { /*adding bottom border to address book list*/
 	text-align:left;
 }
 .myOptions { /*text setup for My Account options*/
-    font-size: 16pt;
+    font-size: 12pt;
     text-align: center;
 }
 .spacer { /*setup for text in New Contact Info Table*/
