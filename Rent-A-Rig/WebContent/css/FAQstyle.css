@@ -1,9 +1,9 @@
-h1.headspace {
-    padding: 15px;
-    word-spacing: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    text-align: center;
-
+.myOptions {
+	text-align: center;
 }
 
+button, .faqbutton {
+	background-color: #30BDF4 0.5%;
+	color: #ffffff;
+	font-size: 16pt;
+}
