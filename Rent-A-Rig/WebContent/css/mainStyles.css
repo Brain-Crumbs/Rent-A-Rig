@@ -1,5 +1,16 @@
 @charset "ISO-8859-1";
 
+.logo-container {
+	height: 40px;
+	width: 60px;
+	overflow: hidden;
+}
+
+.nav-logo {
+	padding-top: -10px;
+	width:40px;
+	height: auto;
+}
 
 .search_input {
 	color: white;
