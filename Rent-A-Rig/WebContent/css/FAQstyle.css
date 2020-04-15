@@ -2,8 +2,10 @@
 	text-align: center;
 }
 
-button, .faqbutton {
-	background-color: #30BDF4 0.5%;
+button.btn, .faqbutton { /* adding color to buttons and adjusting font of ?s*/
+	background-color: #30BDF4;
 	color: #ffffff;
-	font-size: 16pt;
+	border-radius: 4px;
+	font-size: 18pt;
+	font-weight: 700;
 }
