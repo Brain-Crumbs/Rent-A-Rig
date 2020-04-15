@@ -1,11 +1,3 @@
-header {
-    text-align: center;
-    
-}
-
-footer {
-    text-align: center;
-}
 ul { /*adding bottom border to address book list*/
     border-bottom: 2px solid #515751;
     padding-bottom: 5px;
