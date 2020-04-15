@@ -3,12 +3,12 @@
     text-align: left;
     vertical-align: center;
 }
+
 .myContainer {
 	text-align:left;
 }
-.myOptions { /*text setup for My Account options*/
-    font-size: 12pt;
-}
+
+
 .spacer { /*setup for text in New Contact Info Table*/
     margin: 2px;
 }
@@ -19,4 +19,17 @@
  
  #quicklinks {
  color: #53565C;
+ font-size: 18pt;
+ text-decoration: underline;
  }
+ 
+a:link, a:visited {
+    text-decoration: none;
+    color: #30BDF4;
+    font-size: 14pt;
+}
+
+a:hover {
+	color: #53565C;
+	font-size: 14pt;
+}
