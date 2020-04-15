@@ -8,7 +8,6 @@
 }
 .myOptions { /*text setup for My Account options*/
     font-size: 12pt;
-    text-align: center;
 }
 .spacer { /*setup for text in New Contact Info Table*/
     margin: 2px;
@@ -16,4 +15,8 @@
  
 .dancer {
  	text-align: center;
+ }
+ 
+ #quicklinks {
+ color: #53565C;
  }
