@@ -1,16 +1,4 @@
-header {
-    text-align: center;
-    
-}
 
-footer {
-    text-align: center;
-}
-ul { /*adding bottom border to address book list*/
-    border-bottom: 2px solid #515751;
-    padding-bottom: 5px;
-    vertical-align: center;
-}
 .myRow, .myCol { /*set up text in the tables*/
     text-align: left;
     vertical-align: center;
@@ -25,11 +13,7 @@ ul { /*adding bottom border to address book list*/
 .spacer { /*setup for text in New Contact Info Table*/
     margin: 2px;
 }
- h3 {
- 	text-align: center;
- 	margin: 5px;
- }
  
- .dancer {
+.dancer {
  	text-align: center;
  }

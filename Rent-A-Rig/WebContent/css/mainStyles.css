@@ -38,30 +38,13 @@
 body {
     background:#ffffff;
     color: #53565C;
-/*     width: 1000px; */
     position: center;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    border: #30BDF4 solid 2px;
-    padding: 5px;
-    text-align:center;
-    margin: 5px;
-}
-
 a {
     text-decoration: none;
-}
-nav {
-	padding:10px;
-}
-
-.textbox {
-	border: #ffffff 1px solid;
-	border-background-color: #ffffff;
-	opacity: 30%;
 }
 
 .social:hover {
@@ -69,7 +52,7 @@ nav {
      -moz-transform: scale(1.1);
      -o-transform: scale(1.1);
  }
- .social {
+.social {
      -webkit-transform: scale(0.8);
      /* Browser Variations: */
      

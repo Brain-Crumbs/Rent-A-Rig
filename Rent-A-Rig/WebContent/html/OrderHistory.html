@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Order History</title>
-<link rel="stylesheet" href="../css/mainStyles.css" type="text/css">
 <link
 	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	rel="stylesheet" id="bootstrap-css">
@@ -12,22 +11,17 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <script src="../js/Rent-A-Rig.js"></script>
-
 </head>
 <body>
-<div class="myNav">
-    <p></p><nav id="navbar"></nav></div>
-<!--Navigation Section-->
-
-<div class="container-fluid headofpage">
-    <br><br>
-    <header class="col-lg-12 col-med-8 col-sm-6 col-xs-4 headspace">
-    <h1>
-        Order History 
-    </h1>
-    </header>
-</div>
-<hr>
+	<div class="container-fluid">
+		<nav id="navbar"></nav>
+	</div>
+	<div class="container-fluid header">
+		<br>
+		<br>
+		<h1 class="container-fluid headspace">My Account - Order History
+		</h1>
+	</div>
 	<hr>
 	<div class="container-fluid History">
 		<!--    <form> I'm not sure we need this and am unsure of how implement it at this time... -->
@@ -121,7 +115,7 @@
 				</p>
 			</div>
 			<div class="col-lg-6 myCol">
-				<p>$79.99</p>
+				<p>$19.99</p>
 			</div>
 		</div>
 	</div>
@@ -130,21 +124,26 @@
 	<div class="container myOptions">
 		<div class="row myRow1">
 			<div class="col-med-4 col-sm-6 col-lg-3 myCol">
-            <p><a href="NewContact.html"><strong><em>Update Contact Info</em></strong></a></p>
-        </div>
-        <div class="col-med-4 col-sm-6 col-lg-3 myCol">
-            <p><a href="MyAccount.html"><strong><em>My Account</em></strong></a></p>
-        </div>
-        <div class="col-med-4 col-sm-6 col-lg-3 myCol">
-            <p><a href="AddressBook.html"><strong><em>Address Book</em></strong></a></p>
-        </div>
-        <div class="col-med-4 col-sm-6 col-lg-3 myCol">
-	        	<a href="FAQ.html"><strong><em>FAQ</em></strong></a>
+					<p>
+						<a href="NewContact.html">Update Contact Info</a>
+					</p>
+				</div>
+				<div class="col-med-8 col-sm-6 col-lg-4 myCol">
+					<p>
+						<a href="AddressBook.html">Address Book</a>
+					</p>
+				</div>
+				<div class="col-med-8 col-sm-6 col-lg-4 myCol">
+					<p>
+						<a href="FAQ.html">FAQ</a>
+					</p>
+				</div>
+
+			</div>
 		</div>
-		</div>
-	</div>
-	<hr>
-	<footer id="footer"></footer>
-	<!--Includes contact info and feedback link-->
+		<hr>
+		<footer id="footer"></footer>
+		<!--Includes contact info and feedback link-->
+		
 </body>
 </html>
