@@ -1,4 +1,9 @@
-button.btn, .faqbutton { /* adding color to buttons and adjusting font of ?s*/
+.myOptions {
+	text-align: center;
+}
+
+.faq-table button, .faqbutton {
+/* 	adding color to buttons and adjusting font of ?s */
 	background-color: #30BDF4;
 	color: #ffffff;
 	border-radius: 4px;
