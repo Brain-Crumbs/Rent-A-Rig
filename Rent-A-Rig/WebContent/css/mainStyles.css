@@ -86,3 +86,25 @@ a {
  #social-em:hover {
      color: #f39c12;
 }
+
+.go-btn.btn-outline-success, .go-btn.btn-warning{
+	color: #30BDF4;
+	border-color: #30BDF4;
+	background-color: transparent;
+
+}
+.go-btn.btn-outline-success:hover, .go-btn.btn-warning:hover{
+	border-color: #30BDF4;
+	background-color: #30BDF4;
+}
+
+.go-btn.btn-info{
+	color:  #ffffff;
+	background-color: #343a40;
+	border-color: #343a40;
+	border-width: 2px;
+}
+.go-btn.btn-info:hover {
+	border-color: #30BDF4;
+	background-color: #30BDF4;
+}
