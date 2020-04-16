@@ -54,10 +54,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
 .social:hover {
      -webkit-transform: scale(1.1);
      -moz-transform: scale(1.1);
