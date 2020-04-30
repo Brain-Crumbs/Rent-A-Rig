@@ -1,5 +1,9 @@
 @charset "ISO-8859-1";
 
+.nav-pills .nav-link.active {
+	background-color: #30BDF4;
+}
+
 #accordion {
 	padding-top: 20px;
 	width: 100%;
