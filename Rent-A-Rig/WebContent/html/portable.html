@@ -19,14 +19,16 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="../js/products/portables.js"></script>
 <script src="../js/Rent-A-Rig.js"></script>
+<script src="../js/Filter.js"></script>
 </head>
 <body>
-
 	<nav id="navbar"></nav>
 	<header id="header"></header>
 	<section id="tabs">
 		<div class="container">
 			<h6 class="section-title h1">Portable</h6>
+
+
 			<div class="row">
 				<div class="col-xs-12 ">
 					<nav>
@@ -34,13 +36,13 @@
 							role="tablist">
 							<a class="nav-item nav-link active" id="nav-desktop-tab"
 								data-toggle="tab" href="#nav-desktop" role="tab"
-								aria-controls="nav-desktop" aria-selected="true">Gaming Laptops</a> <a
+								aria-controls="nav-desktop" aria-selected="true" onclick="showAllPort()">Gaming Laptops</a> <a
 								class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
 								href="#nav-monitors" role="tab" aria-controls="nav-monitors"
-								aria-selected="false">Thin & Light</a> <a class="nav-item nav-link"
+								aria-selected="false" onclick="showAllPort()">Thin & Light</a> <a class="nav-item nav-link"
 								id="nav-accessories-tab" data-toggle="tab"
 								href="#nav-accessories" role="tab"
-								aria-controls="nav-accessories" aria-selected="false">Tablets</a>
+								aria-controls="nav-accessories" aria-selected="false" onclick="showAllPort()">Tablets</a>
 						</div>
 					</nav>
 					<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -48,25 +50,41 @@
 							role="tabpanel" aria-labelledby="nav-desktop-tab">
 							<!-- Page Content -->
 							<div class="container">
-
+								<div class="dropdown">
+									<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
+										<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<input class="form-control" id="myInput" type="text" placeholder="filter..">
+										<li><p onclick="showAllPort()">Show all products</p> </li>
+										<li><p onclick="showMSIPort()">MSI</p></li>
+										<li><p onclick="showAsusPort()">ASUS</p></li>
+										<li><p onclick="showAcerPort()">ACER</p></li>
+									</ul>
+								</div>
 								<!-- Page Heading -->
 								<h1 class="my-4">
 									Gaming Laptops <small>Powerful gaming rigs on the go!</small>
 								</h1>
 
 								<!-- Product One -->
+								<div class="MSI">
 								<div class="row" id="MSI_9SF-240"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Two -->
+								<div class="ASUS">
 								<div class="row" id="ASUS_ROG_Zephyrus_S"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Three -->
+								<div class="ACER">
 								<div class="row" id="Acer_PH315-52-71RT"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 							</div>
@@ -76,25 +94,41 @@
 							aria-labelledby="nav-monitor-tab">
 							<!-- Page Content -->
 							<div class="container">
-
+								<div class="dropdown">
+									<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
+										<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<input class="form-control" id="myInput" type="text" placeholder="filter..">
+										<li><p onclick="showAllPort()">Show all products</p> </li>
+										<li><p onclick="showSurface()">Microsoft Surface</p></li>
+										<li><p onclick="showApple()">Apple</p></li>
+										<li><p onclick="showLenovo()">Lenovo</p></li>
+									</ul>
+								</div>
 								<!-- Page Heading -->
 								<h1 class="my-4">
 									Thin & Light <small>Lightweight and powerful! Ideal for the traveling professional. </small>
 								</h1>
 
 								<!-- Product One -->
+								<div class="Surface">
 								<div class="row" id="Microsoft_Surface_JKX-00001"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 								<!-- Product Two -->
+								<div class="Apple">
 								<div class="row" id="MacBook_Air_MJVE2LLA"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 								<!-- Product Three -->
+								<div class="Lenovo">
 								<div class="row" id="Lenovo_ThinkPad_20L7002HUS"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 							</div>
@@ -104,25 +138,41 @@
 							aria-labelledby="nav-accessories-tab">
 							<!-- Page Content -->
 							<div class="container">
-
+								<div class="dropdown">
+									<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
+										<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<input class="form-control" id="myInput" type="text" placeholder="filter..">
+										<li><p onclick="showAllPort()">Show all products</p> </li>
+										<li><p onclick="showSurface()">Microsoft Surface</p></li>
+										<li><p onclick="showApple()">Apple</p></li>
+										<li><p onclick="showLenovo()">Lenovo</p></li>
+									</ul>
+								</div>
 								<!-- Page Heading -->
 								<h1 class="my-4">
 									Tablets <small>Tablets for portable entertainment</small>
 								</h1>
 
 								<!-- Product One -->
+								<div class="Surface">
 								<div class="row" id="Microsoft_Surface_Pro_4"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 								<!-- Product Two -->
+								<div class="Apple">
 								<div class="row" id="Apple_iPad_Air"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 								<!-- Product Three -->
+								<div class="Lenovo">
 								<div class="row" id="Lenovo_yoga_tab_3"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 							</div>
