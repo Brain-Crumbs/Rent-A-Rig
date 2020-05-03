@@ -17,6 +17,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="../js/products/desktops.js"></script>
+<script src="../js/Filter.js"></script>
 
 <script src="../js/Rent-A-Rig.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/mainStyles.css">
@@ -29,6 +30,29 @@
 	<section id="tabs">
 		<div class="container">
 			<h6 class="section-title h1">Gaming Rigs</h6>
+			<p>Filter by: <input type="radio" onclick="showAll()" value="ShowAll" name="showAll" id="all" checked="checked">
+				<label for="all">Show All</label></p>
+				<form>
+				Accessory choices:
+			<input type="radio" onclick="showCM()" value="CM" name="CM" id="cm">
+					<label for="cm">Cooler Master</label>
+			<input type="radio" onclick="showRosewell()" value="RoseWell" id="RW" name="RoseWell">
+					<label for="RW">RoseWell</label>
+			<br>
+				Monitor choices:
+			<input type="radio" onclick="showasus()" value="Asus" id="ASUS" name="Asus">
+					<label for="ASUS">ASUS</label>
+			<input type="radio" onclick="showacer()" value="Acer" name="Acer" id="ACER">
+					<label for="ACER">ACER</label>
+			<br>
+				Desktop choices:
+			<input type="radio" onclick="showROG()"value="ROG" name="ROG" id="ROG">
+					<label for="ROG">ROG</label>
+			<input type="radio" onclick="showABS()" value="ABS" name="ABS" id="ABS">
+					<label for="ABS">ABS</label>
+			<input type="radio" onclick="showmsi()" value="MSI" name="MSI" id="MSI">
+					<label for="MSI">MSI</label>
+				</form>
 			<div class="row">
 				<div class="col-xs-12 ">
 					<nav>
@@ -49,6 +73,7 @@
 						<div class="tab-pane fade show active" id="nav-desktop"
 							role="tabpanel" aria-labelledby="nav-desktop-tab">
 							<!-- Page Content -->
+
 							<div class="container">
 
 								<!-- Page Heading -->
@@ -57,20 +82,25 @@
 								</h1>
 
 								<!-- Product One -->
-								<div class="row" id="RoG_Strix_GL12"></div>
+								<div class="rog">
+									<div class="row" id="RoG_Strix_GL12"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Two -->
+								<div class="abs">
 								<div class="row" id="ABS_Mage_M"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Three -->
+								<div class="msi">
 								<div class="row" id="MSI_Trident_XPlus"></div>
-								<!-- /.row -->
+								</div>
+									<!-- /.row -->
 								<hr>
-
 							</div>
 						</div>
 
@@ -85,17 +115,23 @@
 								</h1>
 
 								<!-- Product One -->
+								<div class="asus">
 								<div class="row" id="ASUS_VG245H"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Two -->
+									<div class="acer">
 								<div class="row" id="ACER_Z1_Z321QU"></div>
+									</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Three -->
+										<div class="asus">
 								<div class="row" id="ASUS_XG32VQ"></div>
+										</div>
 								<!-- /.row -->
 								<hr>
 
@@ -113,29 +149,37 @@
 								</h1>
 
 								<!-- Product One -->
-								<div class="row" id="Roswell_Fusion_C40"></div>
+								<div class="rosewell">
+								<div class="row" id="Roswell_Fusion_C40">
+								</div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Two -->
-								<div class="row" id="CM_Devastator_3"></div>
+								<div class="cm">
+								<div class="row" id="CM_Devastator_3">
+								</div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Three -->
+										<div class="cm">
 								<div class="row" id="CM_Storm_Devastator"></div>
+										</div>
 								<!-- /.row -->
 								<hr>
 
 							</div>
 						</div>
+						</div>
 					</div>
 
 				</div>
-			</div>
+
 		</div>
 	</section>
-
 	<footer id="footer"></footer>
 
 </body>

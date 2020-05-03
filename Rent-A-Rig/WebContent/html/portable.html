@@ -27,6 +27,24 @@
 	<section id="tabs">
 		<div class="container">
 			<h6 class="section-title h1">Portable</h6>
+			<p>Filter by: <input type="radio" onclick="showAllPort()" value="ShowAll" name="showAll" id="all" checked="checked">
+				<label for="all">All</label></p>
+			<form>
+				Gaming Laptops:
+				<input type="radio" onclick="showMSIPort()" value="MSI" name="MSI" id="MSI">
+				<label for="MSI">MSI</label>
+				<input type="radio" onclick="showAsusPort()" value="ASUS" id="ASUSP" name="ASUS">
+				<label for="ASUSP">ASUS</label>
+				<input type="radio" onclick="showAcerPort()" value="ACER" id="ACERP" name="ACER">
+				<label for="ACERP">ACER Portables</label><br>
+				Light Weight and Portable:
+				<input type="radio" onclick="showSurface()" value="Surface" name="Surface" id="Surface">
+				<label for="Surface">Microsoft Surface</label>
+				<input type="radio" onclick="showApple()"value="Apple" name="Apple" id="Apple">
+				<label for="Apple">Apple</label>
+				<input type="radio" onclick="showLenovo()" value="Lenovo" name="Lenovo" id="Lenovo">
+				<label for="Lenovo">Lenovo</label>
+			</form>
 			<div class="row">
 				<div class="col-xs-12 ">
 					<nav>
@@ -55,18 +73,24 @@
 								</h1>
 
 								<!-- Product One -->
+								<div class="MSI">
 								<div class="row" id="MSI_9SF-240"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Two -->
+								<div class="ASUS">
 								<div class="row" id="ASUS_ROG_Zephyrus_S"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Three -->
+								<div class="ACER">
 								<div class="row" id="Acer_PH315-52-71RT"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 							</div>
@@ -83,18 +107,24 @@
 								</h1>
 
 								<!-- Product One -->
+								<div class="Surface">
 								<div class="row" id="Microsoft_Surface_JKX-00001"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 								<!-- Product Two -->
+								<div class="Apple">
 								<div class="row" id="MacBook_Air_MJVE2LLA"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 								<!-- Product Three -->
+								<div class="Lenovo">
 								<div class="row" id="Lenovo_ThinkPad_20L7002HUS"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 							</div>
@@ -111,18 +141,24 @@
 								</h1>
 
 								<!-- Product One -->
+								<div class="Surface">
 								<div class="row" id="Microsoft_Surface_Pro_4"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 								<!-- Product Two -->
+								<div class="Apple">
 								<div class="row" id="Apple_iPad_Air"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 								<!-- Product Three -->
+								<div class="Lenovo">
 								<div class="row" id="Lenovo_yoga_tab_3"></div>
 								<!-- /.row -->
+								</div>
 								<hr>
 
 							</div>
