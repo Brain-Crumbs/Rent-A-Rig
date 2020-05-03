@@ -24,35 +24,28 @@
 <link rel="stylesheet" type="text/css" href="../css/products.css">
 </head>
 <body>
-
-	<nav id="navbar"></nav>
+<nav id="navbar"></nav>
 	<header id="header"></header>
 	<section id="tabs">
 		<div class="container">
 			<h6 class="section-title h1">Gaming Rigs</h6>
-			<p>Filter by: <input type="radio" onclick="showAll()" value="ShowAll" name="showAll" id="all" checked="checked">
-				<label for="all">Show All</label></p>
-				<form>
-				Accessory choices:
-			<input type="radio" onclick="showCM()" value="CM" name="CM" id="cm">
-					<label for="cm">Cooler Master</label>
-			<input type="radio" onclick="showRosewell()" value="RoseWell" id="RW" name="RoseWell">
-					<label for="RW">RoseWell</label>
-			<br>
-				Monitor choices:
-			<input type="radio" onclick="showasus()" value="Asus" id="ASUS" name="Asus">
-					<label for="ASUS">ASUS</label>
-			<input type="radio" onclick="showacer()" value="Acer" name="Acer" id="ACER">
-					<label for="ACER">ACER</label>
-			<br>
-				Desktop choices:
-			<input type="radio" onclick="showROG()"value="ROG" name="ROG" id="ROG">
-					<label for="ROG">ROG</label>
-			<input type="radio" onclick="showABS()" value="ABS" name="ABS" id="ABS">
-					<label for="ABS">ABS</label>
-			<input type="radio" onclick="showmsi()" value="MSI" name="MSI" id="MSI">
-					<label for="MSI">MSI</label>
-				</form>
+
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
+					<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<input class="form-control" id="myInput" type="text" placeholder="filter..">
+					<li><p onclick="showAll()">Show All Products</p> </li>
+					<li><p onclick="showCM()">Cooler Master</p></li>
+					<li><p onclick="showasus()">ASUS</p></li>
+					<li><p onclick="showacer()">ACER</p></li>
+					<li><p onclick="showRosewell()">Rosewell</p></li>
+					<li><p onclick="showABS()">ABS</p></li>
+					<li><p onclick="showmsi()">MSI</p></li>
+					<li><p onclick="showROG()">ROG</p> </li>
+				</ul>
+			</div>
+
 			<div class="row">
 				<div class="col-xs-12 ">
 					<nav>
@@ -152,7 +145,7 @@
 								<div class="rosewell">
 								<div class="row" id="Roswell_Fusion_C40">
 								</div>
-								</div>
+							</div>
 								<!-- /.row -->
 								<hr>
 

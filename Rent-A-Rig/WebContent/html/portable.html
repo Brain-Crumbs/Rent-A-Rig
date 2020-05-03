@@ -19,6 +19,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="../js/products/portables.js"></script>
 <script src="../js/Rent-A-Rig.js"></script>
+<script src="../js/Filter.js"></script>
 </head>
 <body>
 
@@ -27,24 +28,21 @@
 	<section id="tabs">
 		<div class="container">
 			<h6 class="section-title h1">Portable</h6>
-			<p>Filter by: <input type="radio" onclick="showAllPort()" value="ShowAll" name="showAll" id="all" checked="checked">
-				<label for="all">All</label></p>
-			<form>
-				Gaming Laptops:
-				<input type="radio" onclick="showMSIPort()" value="MSI" name="MSI" id="MSI">
-				<label for="MSI">MSI</label>
-				<input type="radio" onclick="showAsusPort()" value="ASUS" id="ASUSP" name="ASUS">
-				<label for="ASUSP">ASUS</label>
-				<input type="radio" onclick="showAcerPort()" value="ACER" id="ACERP" name="ACER">
-				<label for="ACERP">ACER Portables</label><br>
-				Light Weight and Portable:
-				<input type="radio" onclick="showSurface()" value="Surface" name="Surface" id="Surface">
-				<label for="Surface">Microsoft Surface</label>
-				<input type="radio" onclick="showApple()"value="Apple" name="Apple" id="Apple">
-				<label for="Apple">Apple</label>
-				<input type="radio" onclick="showLenovo()" value="Lenovo" name="Lenovo" id="Lenovo">
-				<label for="Lenovo">Lenovo</label>
-			</form>
+			
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
+					<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<input class="form-control" id="myInput" type="text" placeholder="filter..">
+					<li><p onclick="showAllPort()">Show all products</p> </li>
+					<li><p onclick="showMSIPort()">MSI</p></li>
+					<li><p onclick="showAsusPort()">ASUS</p></li>
+					<li><p onclick="showAcerPort()">ACER</p></li>
+					<li><p onclick="showSurface()">Microsoft Surface</p></li>
+					<li><p onclick="showApple()">Apple</p></li>
+					<li><p onclick="showLenovo()">Lenovo</p></li>
+				</ul>
+			</div>
 			<div class="row">
 				<div class="col-xs-12 ">
 					<nav>
