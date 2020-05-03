@@ -2,6 +2,17 @@
 
  */
 
+$(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".dropdown-menu li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
+
+
+// desktop functions
 function showAll() {
     $("div").filter(".cm").show();
     $("div").filter(".rosewell").show();
@@ -75,14 +86,15 @@ function showRosewell() {
     $("div").filter(".msi").hide();
     }
 
-    function showAllPort() {
-        $("div").filter(".MSI").show();
-        $("div").filter(".ASUS").show();
-        $("div").filter(".ACER").show();
-        $("div").filter(".Surface").show();
-        $("div").filter(".Apple").show();
-        $("div").filter(".Lenovo").show();
-    }
+    //Functions for all protable products
+function showAllPort() {
+    $("div").filter(".MSI").show();
+    $("div").filter(".ASUS").show();
+    $("div").filter(".ACER").show();
+    $("div").filter(".Surface").show();
+    $("div").filter(".Apple").show();
+    $("div").filter(".Lenovo").show();
+}
 function showMSIPort() {
     $("div").filter(".MSI").show();
     $("div").filter(".ASUS").hide();
