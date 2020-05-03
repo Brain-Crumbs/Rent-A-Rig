@@ -24,42 +24,28 @@
 <link rel="stylesheet" type="text/css" href="../css/products.css">
 </head>
 <body>
-<nav id="navbar"></nav>
+
+	<nav id="navbar"></nav>
 	<header id="header"></header>
 	<section id="tabs">
 		<div class="container">
 			<h6 class="section-title h1">Gaming Rigs</h6>
-
-			<div class="dropdown">
-				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
-					<span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<input class="form-control" id="myInput" type="text" placeholder="filter..">
-					<li><p onclick="showAll()">Show All Products</p> </li>
-					<li><p onclick="showCM()">Cooler Master</p></li>
-					<li><p onclick="showasus()">ASUS</p></li>
-					<li><p onclick="showacer()">ACER</p></li>
-					<li><p onclick="showRosewell()">Rosewell</p></li>
-					<li><p onclick="showABS()">ABS</p></li>
-					<li><p onclick="showmsi()">MSI</p></li>
-					<li><p onclick="showROG()">ROG</p> </li>
-				</ul>
-			</div>
-
 			<div class="row">
 				<div class="col-xs-12 ">
 					<nav>
 						<div class="nav nav-tabs nav-pills nav-fill" id="nav-tab"
 							role="tablist">
 							<a class="nav-item nav-link active" id="nav-desktop-tab"
-								data-toggle="tab" href="#nav-desktop" role="tab"
-								aria-controls="nav-desktop" aria-selected="true">Desktops</a> <a
-								class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-								href="#nav-monitors" role="tab" aria-controls="nav-monitors"
-								aria-selected="false">Monitors</a> <a class="nav-item nav-link"
+							data-toggle="tab" href="#nav-desktop" role="tab"
+							aria-controls="nav-desktop" aria-selected="true"
+							onclick="showAll()">Desktops</a> <a class="nav-item nav-link"
+								id="nav-profile-tab" data-toggle="tab" href="#nav-monitors"
+								role="tab" aria-controls="nav-monitors" aria-selected="false"
+								onclick="showAll()">Monitors</a> <a class="nav-item nav-link"
 								id="nav-accessories-tab" data-toggle="tab"
 								href="#nav-accessories" role="tab"
-								aria-controls="nav-accessories" aria-selected="false">Accessories</a>
+								aria-controls="nav-accessories" aria-selected="false"
+								onclick="showAll()">Accessories</a>
 						</div>
 					</nav>
 					<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
@@ -68,7 +54,20 @@
 							<!-- Page Content -->
 
 							<div class="container">
-
+								<div class="dropdown">
+									<button class="btn btn-primary dropdown-toggle" type="button"
+										data-toggle="dropdown">
+										Filter <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<input class="form-control" id="myInput" type="text"
+											placeholder="filter..">
+										<li><p onclick="showAll()">Show All Products</p></li>
+										<li><p onclick="showABS()">ABS</p></li>
+										<li><p onclick="showmsi()">MSI</p></li>
+										<li><p onclick="showROG()">ROG</p></li>
+									</ul>
+								</div>
 								<!-- Page Heading -->
 								<h1 class="my-4">
 									Desktops <small>Powerful rigs for a home environment</small>
@@ -83,16 +82,16 @@
 
 								<!-- Product Two -->
 								<div class="abs">
-								<div class="row" id="ABS_Mage_M"></div>
+									<div class="row" id="ABS_Mage_M"></div>
 								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Three -->
 								<div class="msi">
-								<div class="row" id="MSI_Trident_XPlus"></div>
+									<div class="row" id="MSI_Trident_XPlus"></div>
 								</div>
-									<!-- /.row -->
+								<!-- /.row -->
 								<hr>
 							</div>
 						</div>
@@ -101,7 +100,20 @@
 							aria-labelledby="nav-monitor-tab">
 							<!-- Page Content -->
 							<div class="container">
+								<div class="dropdown">
+									<button class="btn btn-primary dropdown-toggle" type="button"
+										data-toggle="dropdown">
+										Filter <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<input class="form-control" id="myInput" type="text"
+											placeholder="filter..">
+										<li><p onclick="showAll()">Show All Products</p></li>
 
+										<li><p onclick="showasus()">ASUS</p></li>
+										<li><p onclick="showacer()">ACER</p></li>
+									</ul>
+								</div>
 								<!-- Page Heading -->
 								<h1 class="my-4">
 									Monitors <small>Large, Fast, and Beautiful Displays</small>
@@ -109,22 +121,22 @@
 
 								<!-- Product One -->
 								<div class="asus">
-								<div class="row" id="ASUS_VG245H"></div>
+									<div class="row" id="ASUS_VG245H"></div>
 								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Two -->
-									<div class="acer">
-								<div class="row" id="ACER_Z1_Z321QU"></div>
-									</div>
+								<div class="acer">
+									<div class="row" id="ACER_Z1_Z321QU"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Three -->
-										<div class="asus">
-								<div class="row" id="ASUS_XG32VQ"></div>
-										</div>
+								<div class="asus">
+									<div class="row" id="ASUS_XG32VQ"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
@@ -135,7 +147,19 @@
 							aria-labelledby="nav-accessories-tab">
 							<!-- Page Content -->
 							<div class="container">
-
+								<div class="dropdown">
+									<button class="btn btn-primary dropdown-toggle" type="button"
+										data-toggle="dropdown">
+										Filter <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<input class="form-control" id="myInput" type="text"
+											placeholder="filter..">
+										<li><p onclick="showAll()">Show All Products</p></li>
+										<li><p onclick="showCM()">Cooler Master</p></li>
+										<li><p onclick="showRosewell()">Rosewell</p></li>
+									</ul>
+								</div>
 								<!-- Page Heading -->
 								<h1 class="my-4">
 									Accessories <small>For all gaming needs</small>
@@ -143,33 +167,31 @@
 
 								<!-- Product One -->
 								<div class="rosewell">
-								<div class="row" id="Roswell_Fusion_C40">
+									<div class="row" id="Roswell_Fusion_C40"></div>
 								</div>
-							</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Two -->
 								<div class="cm">
-								<div class="row" id="CM_Devastator_3">
-								</div>
+									<div class="row" id="CM_Devastator_3"></div>
 								</div>
 								<!-- /.row -->
 								<hr>
 
 								<!-- Product Three -->
-										<div class="cm">
-								<div class="row" id="CM_Storm_Devastator"></div>
-										</div>
+								<div class="cm">
+									<div class="row" id="CM_Storm_Devastator"></div>
+								</div>
 								<!-- /.row -->
 								<hr>
 
 							</div>
 						</div>
-						</div>
 					</div>
-
 				</div>
+
+			</div>
 
 		</div>
 	</section>
