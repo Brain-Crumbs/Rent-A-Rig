@@ -86,7 +86,7 @@ function showRosewell() {
     $("div").filter(".msi").hide();
     }
 
-    //Functions for all protable products
+    //Functions for all portable products
 function showAllPort() {
     $("div").filter(".MSI").show();
     $("div").filter(".ASUS").show();
