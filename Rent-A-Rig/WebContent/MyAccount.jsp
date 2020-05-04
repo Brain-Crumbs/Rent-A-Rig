@@ -38,11 +38,7 @@
 				</p>
 			</div>
 			<div class="col-med-4 col-sm-6 col-lg-3 myCol">
-				<p>
-					<a href="AddressBook.html">Address Book</a>
-				</p>
-			</div>
-			<div class="col-med-4 col-sm-6 col-lg-3 myCol">
+
 				<a href="WishList.html">Save For Later</a>
 			</div>
 		</div>
@@ -56,58 +52,20 @@
 				</p>
 			</div>
 			<div class="col-lg-6 myCol">
-				<p>Customer 1</p>
+				<p>${cookie.firstNameCookie.value}</p>
 			</div>
+		</div>
 		</div>
 		<div class="row myRow">
 			<div class="col-lg-6 myCol">
 				<p>
-					<strong>Address line 1:</strong>
+					<strong>Last Name: </strong>
 				</p>
 			</div>
 			<div class="col-lg-6 myCol">
-				<p>555 Main St.</p>
+				<p>${cookie.lastNameCookie.value}</p>
 			</div>
 		</div>
-		<div class="row myRow">
-			<div class="col-lg-6 myCol">
-				<p>
-					<strong>Address line 2:</strong>
-				</p>
-			</div>
-			<div class="col-lg-6 myCol">
-				<p>Apt #</p>
-			</div>
-		</div>
-		<div class="row myRow">
-			<div class="col-lg-6 myCol">
-				<p>
-					<strong>City, State:</strong>
-				</p>
-			</div>
-			<div class="col-lg-6 myCol">
-				<p>Someplace, USA</p>
-			</div>
-		</div>
-		<div class="row myRow">
-			<div class="col-lg-6 myCol">
-				<p>
-					<strong>Zip:</strong>
-				</p>
-			</div>
-			<div class="col-lg-6 myCol">
-				<p>12345</p>
-			</div>
-		</div>
-		<div class="row myRow">
-			<div class="col-lg-6 myCol">
-				<p>
-					<strong>Phone:</strong>
-				</p>
-			</div>
-			<div class="col-lg-6 myCol">
-				<p>(555) 555-5555</p>
-			</div>
 		</div>
 		<div class="row myRow">
 			<div class="col-lg-6 myCol">
@@ -116,7 +74,7 @@
 				</p>
 			</div>
 			<div class="col-lg-6 myCol">
-				<p>myemail@email.com</p>
+				<p>${cookie.emailCookie.value}</p>
 			</div>
 		</div>
 		<div class="row myRow">
