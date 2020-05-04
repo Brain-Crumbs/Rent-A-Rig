@@ -3,13 +3,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="../css/mainStyles.css">
-<link rel="stylesheet" type="text/css" href="../css/products.css">
+<link rel="stylesheet" type="text/css" href="css/mainStyles.css">
+<link rel="stylesheet" type="text/css" href="css/products.css">
 </head>
 <body>
 	<div class="col-md-5">
 		<img class="img-fluid rounded center-block"
-			src="../resources/ACER_Z1_Z321QU.jpg" alt="ACER_Z1_Z321QU_img">
+			src="resources/ACER_Z1_Z321QU.jpg" alt="ACER_Z1_Z321QU_img">
 	</div>
 	<div class="col-md-7">
 		<h3>ASUS VG245H 24" Gaming Monitor</h3>
@@ -19,7 +19,8 @@
 		<p>
 			<b>Pricing: </b>$10 per Month
 		</p>
-		<div class="number-input md-number-input float-left">
+		<form action="cart">
+			<div class="number-input md-number-input float-left">
 			<button
 				onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
 				class="minus"></button>
@@ -28,8 +29,14 @@
 			<button
 				onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
 				class="plus"></button>
-		</div>
-		<a class="btn btn-primary" href="#">Add to Cart</a>
+			</div>
+			<input type="hidden" name="prodName" value="ASUS VG245H 24&#34; Gaming Monitor">
+			<input type="hidden" name="category" value="Monitor">
+			<input type="hidden" name="price" value="10.00">
+			<input type="hidden" name="action" value="addToCart">
+			<button type="submit" class="btn btn-primary">Add to Cart</button>
+		</form>
+		
 	</div>
 	<div id="accordion" role="tablist" aria-multiselectable="true">
 		<div class="card">

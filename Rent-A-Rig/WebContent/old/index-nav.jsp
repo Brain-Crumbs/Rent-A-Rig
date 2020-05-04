@@ -29,19 +29,19 @@
 					class="nav-link dropdown-toggle" href="" id="dropdown01"
 					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
-						<a class="dropdown-item" href="html/Gaming-Rig.html">Gaming Rigs</a>
-						<a class="dropdown-item" href="html/portable.html">Portables</a>
-						<a class="dropdown-item" href="html/Gaming-Rig.html">Accessories</a>
+						<a class="dropdown-item" href="Gaming-Rig.html">Gaming Rigs</a>
+						<a class="dropdown-item" href="portable.html">Portables</a>
+						<a class="dropdown-item" href="Gaming-Rig.html">Accessories</a>
 					</div>
 				</li>
 
 				<li class="nav-item"><a class="nav-link"
-					href="html/registration.html">Log-in/Register</a></li>
+					href="registration.html">Log-in/Register</a></li>
 
 				<li class="nav-item"><a class="nav-link"
-					href="html/MyAccount.html">Account</a></li>
+					href="MyAccount.html">Account</a></li>
 
-				<li class="nav-item"><a class="nav-link" href="html/cart.html">Cart</a>
+				<li class="nav-item"><a class="nav-link" href="cart?action=viewCart">Cart</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">

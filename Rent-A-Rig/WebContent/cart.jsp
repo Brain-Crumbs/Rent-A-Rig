@@ -3,6 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Checkout Form</title>
+
 <!-- BootStrap -->
 <link
 	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -11,17 +12,18 @@
 	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://use.fontawesome.com/c560c025cf.js"></script>
+
 <!-- Local Style and javascript -->
-<link rel="stylesheet" href="../css/cart.css" type="text/css">
-<script src="../js/Rent-A-Rig.js"></script>
-<script src="../js/cart.js"></script>
+<link rel="stylesheet" href="css/cart.css" type="text/css">
+<script src="js/cart.js"></script>
 </head>
 <body>
-	<nav id="navbar"></nav>
-	<header id="header"></header>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	<jsp:include page="navbar.jsp"></jsp:include>
+	<jsp:include page="header.html"></jsp:include>
 	<div class="container">
 		<div class="py-5 text-center">
-			<img src="../resources/logo.png" alt="" width="200" height="180">
+			<img src="resources/logo.png" alt="" width="200" height="180">
 			<h2>Checkout form</h2>
 			<p class="lead">There might be a short delay in delivery due to
 				COVID-19</p>
@@ -30,38 +32,24 @@
 			<div class="col-md-4 order-md-2 mb-4">
 				<h4 class="d-flex justify-content-between align-items-center mb-3">
 					<span class="text-muted">Your cart</span> <span
-						class="badge badge-secondary badge-pill">3</span>
+						class="badge badge-secondary badge-pill">${cart.numItems}</span>
 				</h4>
 				<ul class="list-group mb-3 sticky-top">
-					<li
-						class="list-group-item d-flex justify-content-between lh-condensed">
+				
+				<c:forEach var="item" items="${cart.items}">
+					<li class="list-group-item d-flex justify-content-between lh-condensed">
 						<div>
-							<h6 class="my-0">Apple iPad Air</h6>
-							<small class="text-muted">Apple Tablet</small>
-						</div> <span class="text-muted">$15/month</span>
+							<h6 class="my-0">${item.prodName}</h6>
+							<small class="text-muted">${item.category}</small>
+						</div> <span class="text-muted">$${item.price}/month</span>
 					</li>
-					<li
-						class="list-group-item d-flex justify-content-between lh-condensed">
-						<div>
-							<h6 class="my-0">MSI 9SF 240 Laptop</h6>
-							<small class="text-muted">MSI Gaming laptop</small>
-						</div> <span class="text-muted">$50/month</span>
+				</c:forEach>
+				
+					<li class="list-group-item d-flex justify-content-between">
+						<span>Total(USD)</span>
+						<strong>$${cart.total}/month</strong>
 					</li>
-					<li
-						class="list-group-item d-flex justify-content-between lh-condensed">
-						<div>
-							<h6 class="my-0">ABS Mage M Gaming Desktop</h6>
-							<small class="text-muted">AMD Gaming Desktop</small>
-						</div> <span class="text-muted">$50</span>
-					</li>
-					<li class="list-group-item d-flex justify-content-between bg-light">
-						<div class="text-success">
-							<h6 class="my-0">Promo Code:</h6>
-							<small>YIKES</small>
-						</div> <span class="text-success">Free shipping & Tax Off</span>
-					</li>
-					<li class="list-group-item d-flex justify-content-between"><span>Total
-							(USD)</span> <strong>$115/month</strong></li>
+					
 				</ul>
 				<form class="card p-2">
 					<div class="input-group">
@@ -262,7 +250,7 @@
 				</form>
 			</div>
 		</div>
-		<footer id="footer"></footer>
+		<jsp:include page="footer.html"></jsp:include>
 	</div>
 </body>
 </html>

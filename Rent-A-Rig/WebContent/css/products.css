@@ -54,6 +54,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .md-number-input.number-input {
 	border: 2px solid #ddd;
 	width: 11.8rem;
+	height:;
 }
 
 .md-number-input.number-input button {
@@ -102,7 +103,7 @@ a {
 	color: #30BDF4;
 }
 
-a.btn-primary {
+a.btn-primary, button.btn-primary {
 	font-size: 1.2rem;
 	line-height: 1.6;
 	text-align: center;
