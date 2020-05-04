@@ -56,7 +56,16 @@ public class CartServlet extends HttpServlet {
 		
 		// click on Update Cart button
 		else if (action.equals("updateCart")) {
-
+			
+			//get array of prodNames
+			//get array of categories
+			//get array of prices
+			//get array of quantities
+			
+			//for each prodName construct LineItem
+			//feed LineItem into cart.updateItem(LineItem)
+			
+			//send sc.getRequestDispatcher.forward(cart.jsp)
 			
 		}
 		
