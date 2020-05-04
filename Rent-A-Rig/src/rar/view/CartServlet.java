@@ -1,6 +1,8 @@
 package rar.view;
 
 import java.io.*;
+import java.util.List;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -57,17 +59,36 @@ public class CartServlet extends HttpServlet {
 		// click on Update Cart button
 		else if (action.equals("updateCart")) {
 			
-			//get array of prodNames
-			//get array of categories
-			//get array of prices
-			//get array of quantities
+			String[] prodNames = request.getParameterValues("prodName");
+			String[]categories = request.getParameterValues("category");
+			String[]prices = request.getParameterValues("price");
+			String[]quantities = request.getParameterValues("quantity");
+
+			for(int i = 0; i < prodNames.length; i++)
+			{
 			
+				
+				LineItem item = new LineItem(prodNames[i], categories[i], Integer.parseInt(quantities[i]), Double.parseDouble(prices[i]));
+				
+				cart.updateItem(item);
+				
+			}
+			String url = "/cart?action=viewCart";
+			if(cart.getItems().size() == 0) {
+				url = "/emptyCart.jsp";
+			}
+			
+			ServletContext sc = getServletContext();
+			
+			sc.getRequestDispatcher(url).forward(request, response);
 			//for each prodName construct LineItem
 			//feed LineItem into cart.updateItem(LineItem)
 			
 			//send sc.getRequestDispatcher.forward(cart.jsp)
 			
 		}
+		
+		
 		
 		// Visit the Cart page
 		else if (action.equals("viewCart")) {

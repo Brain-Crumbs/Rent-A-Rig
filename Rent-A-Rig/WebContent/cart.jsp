@@ -49,6 +49,10 @@
 								type="number">
 						</div>
 					</li>
+					<input type="hidden" name="prodName" value="${item.prodName}">
+					<input type="hidden" name="category" value="${item.category}">
+					<input type="hidden" name="price" value="${item.price}">
+					
 				</c:forEach>
 					<li class="list-group-item d-flex justify-content-between">
 						<span>Total(USD)</span>
