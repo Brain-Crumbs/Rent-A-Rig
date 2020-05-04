@@ -55,7 +55,7 @@
 						<strong>$${cart.total}/month</strong>
 					</li>
 					<li class="list-group-item d-flex justify-content-between">
-						<button type="submit">Update Cart</button>
+						<button type="submit" class="submit-btn">Update Cart</button>
 					</li>
 				</ul>
 				
