@@ -3,13 +3,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Microsoft Surface Pro 4</title>
-<link rel="stylesheet" type="text/css" href="../css/mainStyles.css">
-<link rel="stylesheet" type="text/css" href="../css/products.css">
+<link rel="stylesheet" type="text/css" href="css/mainStyles.css">
+<link rel="stylesheet" type="text/css" href="css/products.css">
 </head>
 <body>
 	<div class="col-md-5">
 		<img class="img-fluid rounded center-block"
-			src="../resources/Microsoft_Surface_Pro_4.jpg"
+			src="resources/Microsoft_Surface_Pro_4.jpg"
 			alt="Microsoft_Surface_Pro_4_GamingDesktop_img">
 	</div>
 	<div class="col-md-7">
@@ -21,11 +21,13 @@
 		</p>
 		<div class="number-input md-number-input float-left">
 			<button
+				type="button"
 				onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
 				class="minus"></button>
 			<input class="quantity" min="0" name="quantity" value="1"
 				type="number">
 			<button
+				type="button"
 				onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
 				class="plus"></button>
 		</div>
