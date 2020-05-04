@@ -34,7 +34,7 @@
 					</div></li>
 				<li class="nav-item"><a class="nav-link"
 					href="registration.jsp">Log-in/Register</a></li>
-				<li class="nav-item"><a class="nav-link" href="MyAccount.html">Account</a>
+				<li class="nav-item"><a class="nav-link" href="MyAccount.jsp">Account</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
 					href="cart?action=viewCart">Cart</a></li>
@@ -42,7 +42,7 @@
 			<div class="collapse navbar-collapse" id="#navbars">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link">Hello, Welcome
-							${cookie.userNameCookie.value}!</a></li>
+							${cookie.firstNameCookie.value}!</a></li>
 				</ul>
 			</div>
 			<form class="form-inline my-2 my-lg-0">

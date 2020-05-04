@@ -44,7 +44,7 @@ public class IndexServlet extends HttpServlet {
 		session.setAttribute("user", user);
 		
 		
-		Cookie firstNameCookie = new Cookie("userNameCookie", firstName);
+		Cookie firstNameCookie = new Cookie("firstNameCookie", firstName);
 		firstNameCookie.getValue();
 		System.out.println(firstName);
 		firstNameCookie.setPath("/");
@@ -61,7 +61,8 @@ public class IndexServlet extends HttpServlet {
 		
 		response.addCookie(firstNameCookie);
 		response.addCookie(lastNameCookie);
-		response.addCookie(emailCookie);		
+		response.addCookie(emailCookie);
+		response.sendRedirect("index.jsp");
 		
 	}
 
