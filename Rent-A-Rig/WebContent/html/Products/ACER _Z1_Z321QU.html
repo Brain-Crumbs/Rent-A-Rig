@@ -19,7 +19,8 @@
 		<p>
 			<b>Pricing: </b>$10 per Month
 		</p>
-		<div class="number-input md-number-input float-left">
+		<form action="cart">
+			<div class="number-input md-number-input float-left">
 			<button
 				type="button"
 				onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
@@ -30,8 +31,14 @@
 				type="button"
 				onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
 				class="plus"></button>
-		</div>
-		<a class="btn btn-primary" href="#">Add to Cart</a>
+			</div>
+			<input type="hidden" name="prodName" value="ASUS VG245H 24&#34; Gaming Monitor">
+			<input type="hidden" name="category" value="Monitor">
+			<input type="hidden" name="price" value="10.00">
+			<input type="hidden" name="action" value="addToCart">
+			<button type="submit" class="btn btn-primary">Add to Cart</button>
+		</form>
+		
 	</div>
 	<div id="accordion" role="tablist" aria-multiselectable="true">
 		<div class="card">

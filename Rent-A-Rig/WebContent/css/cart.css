@@ -8,8 +8,14 @@
 	line-height: 1.25;
 }
 
+div.number-input {
+	padding: 0px 5px;
+}
+
+.submit-btn {
+	width: 100%
+}
+
 .quantity {
-	width: 30px
-	
-	
+	width: 40px
 }
