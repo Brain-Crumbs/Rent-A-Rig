@@ -19,19 +19,25 @@
 		<p>
 			<b>Pricing: </b>$60 per Month
 		</p>
-		<div class="number-input md-number-input float-left">
-			<button
-				type="button"
-				onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-				class="minus"></button>
-			<input class="quantity" min="0" name="quantity" value="1"
-				type="number">
-			<button
-				type="button"
-				onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-				class="plus"></button>
-		</div>
-		<a class="btn btn-primary" href="#">Add to Cart</a>
+		<form action="cart">
+			<div class="number-input md-number-input float-left">
+				<button
+					type="button"
+					onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+					class="minus"></button>
+				<input class="quantity" min="0" name="quantity" value="1"
+					type="number">
+				<button
+					type="button"
+					onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+					class="plus"></button>
+			</div>
+			<input type="hidden" name="prodName" value="Apple Laptop MacBook Air">
+			<input type="hidden" name="category" value="Thin & Light">
+			<input type="hidden" name="price" value="60.00">
+			<input type="hidden" name="action" value="addToCart">
+			<button type="submit" class="btn btn-primary">Add to Cart</button>
+		</form>
 	</div>
 	<div id="accordion" role="tablist" aria-multiselectable="true">
 		<div class="card">
