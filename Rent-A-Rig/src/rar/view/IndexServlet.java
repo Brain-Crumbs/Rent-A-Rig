@@ -61,9 +61,10 @@ public class IndexServlet extends HttpServlet {
 		
 		response.addCookie(firstNameCookie);
 		response.addCookie(lastNameCookie);
-		response.addCookie(emailCookie);		
-	
+		response.addCookie(emailCookie);
 		response.sendRedirect("index.jsp");
+		
+		//branch 'userLogin' of https://github.com/Brain-Crumbs/Rent-A-Rig.git
 	}
 
 }
