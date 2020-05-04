@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="js/index.js"></script>
+<script src="js/Rent-A-Rig.js"></script>
 <meta charset="ISO-8859-1">
 
 <link rel="stylesheet" type="text/css" href="css/mainStyles.css">
@@ -13,7 +13,7 @@
 <title>Rent-A-Rig</title>
 </head>
 <body>
-	<nav id="index-nav"></nav>
+	<nav id="navbar"></nav>
 	<div class="jumbotron mb-0 image1">
 		<div class="container">
 			<h1 class="display-3 text-warning">Rent-A-Rig&#169</h1>
@@ -57,7 +57,7 @@
 			</div>
 			<img class="image2">
 			<div class="card-body">
-				<a href="html/portable.html" class="go-btn btn btn-info">See More</a>
+				<a href="portable.html" class="go-btn btn btn-info">See More</a>
 			</div>
 		</div>
 		<div class="card m-0">
@@ -66,7 +66,7 @@
 			</div>
 			<img class="image3">
 			<div class="card-body">
-				<a href="html/Gaming-Rig.html" class="go-btn btn btn-info">See More</a>
+				<a href="Gaming-Rig.html" class="go-btn btn btn-info">See More</a>
 			</div>
 		</div>
 		<div class="card m-0">
@@ -75,15 +75,15 @@
 			</div>
 			<img class="image4">
 			<div class="card-body">
-				<a href="html/Gaming-Rig.html" class="go-btn btn btn-info">See More</a>
+				<a href="Gaming-Rig.html" class="go-btn btn btn-info">See More</a>
 			</div>
 		</div>
 
 	</div>
 	<div class="container6">
 		<h2 style="color: white;">Learn More About Us</h2>
-		<a href="html/FAQ.html" class="go-btn btn btn-warning">FAQ</a>
+		<a href="FAQ.html" class="go-btn btn btn-warning">FAQ</a>
 	</div>
-	<footer id="index-footer"></footer>
+	<footer id="footer"></footer>
 </body>
 </html>
