@@ -7,3 +7,11 @@
 .lh-condensed {
 	line-height: 1.25;
 }
+
+div.number-input {
+	padding: 0px 5px;
+}
+
+.quantity {
+	width: 40px
+}
