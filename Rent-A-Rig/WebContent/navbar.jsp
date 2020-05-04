@@ -34,7 +34,7 @@
 					</div></li>
 				<li class="nav-item"><a class="nav-link"
 					href="registration.jsp">Log-in/Register</a></li>
-				<li class="nav-item"><a class="nav-link" href="MyAccount.html">Account</a>
+				<li class="nav-item"><a class="nav-link" href="MyAccount.jsp">Account</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
 					href="cart?action=viewCart">Cart</a></li>
@@ -45,6 +45,7 @@
 							${cookie.firstNameCookie.value}!</a></li>
 				</ul>
 			</div>
+			
 			<form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="text" placeholder="Search"
 					aria-label="Search">
