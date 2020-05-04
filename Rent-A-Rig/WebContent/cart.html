@@ -12,16 +12,16 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://use.fontawesome.com/c560c025cf.js"></script>
 <!-- Local Style and javascript -->
-<link rel="stylesheet" href="../css/cart.css" type="text/css">
-<script src="../js/Rent-A-Rig.js"></script>
-<script src="../js/cart.js"></script>
+<link rel="stylesheet" href="css/cart.css" type="text/css">
+<script src="js/Rent-A-Rig.js"></script>
+<script src="js/cart.js"></script>
 </head>
 <body>
 	<nav id="navbar"></nav>
 	<header id="header"></header>
 	<div class="container">
 		<div class="py-5 text-center">
-			<img src="../resources/logo.png" alt="" width="200" height="180">
+			<img src="resources/logo.png" alt="" width="200" height="180">
 			<h2>Checkout form</h2>
 			<p class="lead">There might be a short delay in delivery due to
 				COVID-19</p>
@@ -33,21 +33,29 @@
 						class="badge badge-secondary badge-pill">3</span>
 				</h4>
 				<ul class="list-group mb-3 sticky-top">
-					<li class="list-group-item d-flex justify-content-between lh-condensed">
+
+					<li
+						class="list-group-item d-flex justify-content-between lh-condensed">
 						<div>
 							<h6 class="my-0">ABS Desktop</h6>
 							<small class="text-muted">AMD Gaming Desktop</small>
 						</div> <span class="text-muted">$50/month</span>
-						<div class="number-input md-number-input float-right">	
+						<div class="number-input md-number-input float-right">
+							
 							<label for="quantity"><span class="text-muted">Qty</span></label>
 							<input class="quantity" min="0" name="quantity" value="1"
 								type="number">
+
 						</div>
 					</li>
-					<li class="list-group-item d-flex justify-content-between">
-					<span>Total(USD)</span> 
-					<strong>$115/month</strong></li>			
-					<button type="button" action="update" href="cart">Update Cart</button>
+
+
+
+					<li class="list-group-item d-flex justify-content-between"><span>Total
+							(USD)</span> <strong>$115/month</strong></li>
+							
+						<button type="button" action="update" href="cart">Update Cart</button>
+
 				</ul>
 
 
