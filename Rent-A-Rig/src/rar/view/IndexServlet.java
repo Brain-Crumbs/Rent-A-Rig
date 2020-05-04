@@ -30,24 +30,39 @@ public class IndexServlet extends HttpServlet {
 
 	private void registerUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String firstName = request.getParameter("firstName");
+		String lastName = request.getParameter("lastName");
+		String email = request.getParameter("email");
+		
 		HttpSession session = request.getSession();
 		
 		
 		User user = new User();
 		user.setFirstName(firstName);
+		user.setLastName(lastName);
+		user.setEmail(email);
 		
 		session.setAttribute("user", user);
 		
 		
-		Cookie unc = new Cookie("userNameCookie", firstName);
-		unc.getValue();
+		Cookie firstNameCookie = new Cookie("userNameCookie", firstName);
+		firstNameCookie.getValue();
 		System.out.println(firstName);
-		unc.setPath("/");
+		firstNameCookie.setPath("/");
 		
+		Cookie lastNameCookie = new Cookie("lastNameCookie", lastName);
+		lastNameCookie.getValue();
+		System.out.println(lastName);
+		lastNameCookie.setPath("/");
 		
-		response.addCookie(unc);
-		response.sendRedirect("/index.jsp");
-		/* request.getRequestDispatcher("/index.jsp").forward(request, response); */
+		Cookie emailCookie = new Cookie("emailCookie", email);
+		emailCookie.getValue();
+		System.out.println(email);
+		emailCookie.setPath("/");
+		
+		response.addCookie(firstNameCookie);
+		response.addCookie(lastNameCookie);
+		response.addCookie(emailCookie);		
+		
 	}
 
 }
