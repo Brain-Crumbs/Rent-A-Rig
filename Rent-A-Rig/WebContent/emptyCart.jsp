@@ -22,7 +22,9 @@
 <body>
 	<jsp:include page="navbar.jsp"></jsp:include>
 	<jsp:include page="header.html"></jsp:include>
-	<h1>NOTHING IN THE CART</h1>
+	<h1>There is currently nothing in the cart!</h1>
+	
+	
 	<jsp:include page="footer.html"></jsp:include>
 </body>
 </html>

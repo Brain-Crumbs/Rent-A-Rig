@@ -6,8 +6,21 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Registration form</title>
+
+<!-- BootStrap -->
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://use.fontawesome.com/c560c025cf.js"></script>
+
+
+
 </head>
 <body>
+	<jsp:include page="navbar.jsp"></jsp:include>
 	<header id="header"></header>
 	<div class="mt-5">
 		<h1>My Registration Form</h1>
@@ -39,5 +52,6 @@
 		</form>
 	</div>
 	<a href="login.jsp">Sign In</a>
+		<jsp:include page="footer.html"></jsp:include>
 </body>
 </html>
