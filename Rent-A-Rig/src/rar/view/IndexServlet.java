@@ -66,5 +66,12 @@ public class IndexServlet extends HttpServlet {
 		
 		//branch 'userLogin' of https://github.com/Brain-Crumbs/Rent-A-Rig.git
 	}
-
+	private void deleteCookie(HttpServletRequest request, HttpServletResponse response) {
+		Cookie[] cookies = request.getCookies();
+		for (Cookie cookie : cookies) {
+			cookie.setMaxAge(0); //delete the cookie
+			cookie.setPath("/");
+			response.addCookie(cookie);
+		}
+	}
 }

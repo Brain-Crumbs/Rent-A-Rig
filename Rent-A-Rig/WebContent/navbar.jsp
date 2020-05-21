@@ -12,7 +12,7 @@
 			<img class="nav-logo img-fluid" alt="rent-a-rig_logo"
 				src="resources/nav-logo.png">
 		</div>
-		<a class="navbar-brand" href="index.html">Rent-A-Rig</a>
+		<a class="navbar-brand" href="index.jsp">Rent-A-Rig</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbars" aria-controls="#navbars" aria-expanded="false"
 			aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
 			</ul>
 			<div class="collapse navbar-collapse" id="#navbars">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link">Hello, Welcome
+					<li class="nav-item firstName1"><a class="nav-link">Hello, Welcome
 							${cookie.firstNameCookie.value}!</a></li>
 				</ul>
 			</div>
